@@ -8,49 +8,48 @@
 </head>
 <body>
   <div class="filters">
-    <div class="other-filters">
-      <select id="loaFilter">
-        <option value="">All LoA</option>
-        <option value="1">IAL1/AAL1</option>
-        <option value="2">eIDAS Low - IAL1–2</option>
-        <option value="3">eIDAS Substantial - IAL2/AAL2</option>
-        <option value="4">eIDAS High - IAL3/AAL3</option>
-        <option value="5">eIDAS High+/QES - IAL3+</option>
-      </select>
-      <a
-        href="https://docs.hopae.com/guides/concepts/assurance#loa-levels"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="info-icon"
-        aria-label="Learn more about LoA levels"
-      >?</a>
-      <select id="typeFilter">
-        <option value="">All digital ID types</option>
-        <option value="1">Centralized IdP</option>
-        <option value="2">Chip-based</option>
-        <option value="3">Wallet</option>
-      </select>
-      <a
-        href="https://docs.hopae.com/guides/concepts/digital-id-types"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="info-icon"
-        aria-label="Learn more about digital ID types"
-      >?</a>
-      <select id="flowFilter">
-        <option value="">All flow types</option>
-        <option value="qr">QR</option>
-        <option value="redirect">Redirect</option>
-        <option value="push">Push</option>
-      </select>
-      <a
-        href="https://docs.hopae.com/guides/concepts/verification-flow#verification-flows"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="info-icon"
-        aria-label="Learn more about flow types"
-      >?</a>
-    </div>
+    <select id="loaFilter">
+      <option value="">All LoA</option>
+      <option value="1">IAL1/AAL1</option>
+      <option value="2">eIDAS Low - IAL1–2</option>
+      <option value="3">eIDAS Substantial - IAL2/AAL2</option>
+      <option value="4">eIDAS High - IAL3/AAL3</option>
+      <option value="5">eIDAS High+/QES - IAL3+</option>
+    </select>
+    <a
+      href="https://docs.hopae.com/guides/concepts/assurance#loa-levels"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="info-icon"
+      aria-label="Learn more about LoA levels"
+    >?</a>
+    <select id="typeFilter">
+      <option value="">All digital ID types</option>
+      <option value="1" selected>Centralized IdP</option>
+      <option value="2">Chip-based</option>
+      <option value="3">Wallet</option>
+    </select>
+    <a
+      href="https://docs.hopae.com/guides/concepts/digital-id-types"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="info-icon"
+      aria-label="Learn more about digital ID types"
+    >?</a>
+    <select id="flowFilter">
+      <option value="">All flow types</option>
+      <option value="qr">QR</option>
+      <option value="redirect">Redirect</option>
+      <option value="push">Push</option>
+    </select>
+    <a
+      href="https://docs.hopae.com/guides/concepts/verification-flow#verification-flows"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="info-icon"
+      aria-label="Learn more about flow types"
+    >?</a>
+    <div class="counter" id="counter"><h3>0 supported digital identity</h3></div>
   </div>
 
   <div class="layout">

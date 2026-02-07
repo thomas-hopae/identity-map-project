@@ -70,10 +70,8 @@ function initFilters() {
   document.getElementById("loaFilter").addEventListener("change", applyFilters);
   document.getElementById("typeFilter").addEventListener("change", applyFilters);
   document.getElementById("flowFilter").addEventListener("change", applyFilters);
-  // country filter removed
+  applyFilters();
 }
-
-// country filter code removed
 
 function applyFilters() {
   const loaValue = document.getElementById("loaFilter").value;
@@ -97,6 +95,7 @@ function applyFilters() {
   });
 
   updateMapStyle();
+  countSupportedDigitalIdentities();
   clearDetailsPanel();
 }
 
@@ -149,7 +148,8 @@ function selectCountry(countryCode, countryName) {
 
   items.forEach(item => {
     panel.innerHTML += `
-      <div style="margin-bottom:12px">
+      <div style="margin-bottom:24px">
+        <img src=${item.logoUrl} alt="${item.name} logo" height="24" style="vertical-align:middle; margin-right:8px; margin-bottom:6px"/>
         <strong>${item.name}</strong><br/>
         <small>
           Type: ${item.type}<br/>
@@ -166,6 +166,15 @@ function selectCountry(countryCode, countryName) {
 // ----------------------------
 // Helpers
 // ----------------------------
+function countSupportedDigitalIdentities() {
+  let count = 0;
+  filteredData.forEach(item => {
+    count += item.countries?.length || 0;
+  });
+  const counter = document.getElementById("counter");
+  counter.innerHTML = `<h3>${count} supported digital identit${count > 1 ? "ies" : "y"}</h3>`;
+}
+
 function clearDetailsPanel() {
   const panel = document.getElementById("details");
   panel.innerHTML = "<h2>Select a country</h2>";
