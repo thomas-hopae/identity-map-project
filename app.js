@@ -148,7 +148,7 @@ function selectCountry(countryCode, countryName) {
 
   items.forEach(item => {
     panel.innerHTML += `
-      <div style="margin-bottom:24px">
+      <div style="margin-bottom:24px; border-bottom:1px solid #4caf50;">
         <img src=${item.logoUrl} alt="${item.name} logo" height="24" style="vertical-align:middle; margin-right:8px; margin-bottom:6px"/>
         <strong>${item.name}</strong><br/>
         <small>
