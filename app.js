@@ -139,7 +139,7 @@ function selectCountry(countryCode, countryName) {
     item.countries?.includes(countryCode)
   );
 
-  panel.innerHTML = `<h2>${countryName}</h2>`;
+  panel.innerHTML = `<h2>${countryName}</h2><small>${items.length} digital identit${items.length > 1 ? "ies" : "y"} available</small><hr/>`;
 
   if (!items.length) {
     panel.innerHTML += "<p>No matching identities for current filters.</p>";
@@ -152,11 +152,10 @@ function selectCountry(countryCode, countryName) {
         <img src=${item.logoUrl} alt="${item.name} logo" height="24" style="vertical-align:middle; margin-right:8px; margin-bottom:6px"/>
         <strong>${item.name}</strong><br/>
         <small>
-          Type: ${item.type}<br/>
-          LoA: ${item.loa?.join(", ") || "-"}<br/>
-          Action required: ${item.needAction}<br/>
-          Flows: ${item.flowTypes?.join(", ") || "-"}<br/>
-          Scopes: ${item.scopes?.join(", ") || "-"}
+          <strong>Type:</strong> ${item.type}<br/>
+          <strong>LoA:</strong> ${item.loa?.join(", ") || "-"}<br/>
+          <strong>Flows:</strong> ${item.flowTypes?.join(", ") || "-"}<br/>
+          <strong>Scopes:</strong> <ul><li>${item.scopes?.join("</li><li>") || "-"}</li></ul>
         </small>
       </div>
     `;
