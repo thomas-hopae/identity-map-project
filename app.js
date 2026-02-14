@@ -7,6 +7,7 @@ let geoLayer = null;
 let map = null;
 let viewMode = 'map';
 let countryMeta = {};
+let selectedCountryCode = null;
 
 // ----------------------------
 // Type icon helpers (global)
@@ -183,9 +184,15 @@ function applyFilters() {
 // Map styling
 // ----------------------------
 function getAvailableCountries() {
+  const regionValue = document.getElementById("regionFilter").value;
   const set = new Set();
   filteredData.forEach(item => {
-    item.countries?.forEach(code => set.add(code.toLowerCase()));
+    item.countries?.forEach(code => {
+      const meta = countryMeta[code.toLowerCase()];
+      if (!regionValue || meta?.region === regionValue) {
+        set.add(code.toLowerCase());
+      }
+    });
   });
   return set;
 }
@@ -195,12 +202,13 @@ function styleFeature(feature) {
   const available = getAvailableCountries();
 
   const isActive = code && available.has(code);
+  const isSelected = code && code === selectedCountryCode;
 
   return {
-    fillColor: isActive ? "#4caf50" : "#dddddd",
-    weight: 1,
-    color: "#999",
-    fillOpacity: isActive ? 0.8 : 0.3
+    fillColor: isSelected ? "#9c27b0" : (isActive ? "#4caf50" : "#dddddd"),
+    weight: isSelected ? 2 : 1,
+    color: isSelected ? "#7b1fa2" : "#999",
+    fillOpacity: isSelected ? 0.9 : (isActive ? 0.8 : 0.3)
   };
 }
 
@@ -214,6 +222,10 @@ function updateMapStyle() {
 // ----------------------------
 function selectCountry(countryCode, countryName, countryRegion) {
   console.log("Selected country:", countryCode);
+  selectedCountryCode = countryCode?.toLowerCase() || null;
+  updateMapStyle();
+  if (viewMode === 'list') renderListView();
+  
   const panel = document.getElementById("details");
   const items = filteredData.filter(item =>
     item.countries?.some(c => c.toLowerCase() === String(countryCode).toLowerCase())
@@ -246,6 +258,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
 // List view rendering
 // ----------------------------
 function renderListView() {
+  const regionValue = document.getElementById("regionFilter").value;
   const listEl = document.getElementById('list');
   if (!listEl) return;
 
@@ -254,10 +267,13 @@ function renderListView() {
   filteredData.forEach(item => {
     (item.countries || []).forEach(code => {
       const k = code.toLowerCase();
-      if (!countryMap[k]) {
-        countryMap[k] = { code: k, items: [], name: (countryMeta[k] && countryMeta[k].name) || k.toUpperCase(), region: (countryMeta[k] && countryMeta[k].region) || 'Unknown' };
+      const meta = countryMeta[k];
+      if (!regionValue || meta?.region === regionValue) {
+        if (!countryMap[k]) {
+          countryMap[k] = { code: k, items: [], name: (meta && meta.name) || k.toUpperCase(), region: (meta && meta.region) || 'Unknown' };
+        }
+        countryMap[k].items.push(item);
       }
-      countryMap[k].items.push(item);
     });
   });
 
@@ -306,6 +322,11 @@ function renderListView() {
       const region = el.dataset.region;
       selectCountry(code, name, region);
     });
+    
+    // Highlight selected country in list
+    if (el.dataset.code === selectedCountryCode) {
+      el.classList.add('selected');
+    }
   });
 }
 

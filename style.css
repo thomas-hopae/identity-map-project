@@ -80,7 +80,7 @@ body{
 .list-panel .region{break-inside:avoid-column;margin-bottom:18px}
 .list-panel .region h3{margin:0 0 10px 0;color:var(--primary);font-size:14px}
 .list-type-icon{width:12px;height:12px;display:inline-block;margin-bottom: -3px;margin-left: 3px;}
-.x-small{font-size:x-small;color:var(--text)}
+.x-small{font-size:10px;color:var(--text)}
 
 /* Use CSS columns to add columns when content overflows vertically */
 .list-panel{column-width:200px;column-gap:18px}
@@ -92,3 +92,6 @@ body[data-view="map"] .list-panel{display:none}
 
 /* Ensure map and list take full height of panel */
 #map, .list-panel{height:100%}
+
+/* Selected country styling */
+.country-link.selected{color:#9c27b0;font-weight:600}
