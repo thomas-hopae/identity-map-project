@@ -148,6 +148,9 @@ function initFilters() {
 }
 
 function applyFilters() {
+  // unselect ciountry when filters change
+  selectedCountryCode = null;
+
   const loaValue = document.getElementById("loaFilter").value;
   const typeValue = document.getElementById("typeFilter").value;
   const regionValue = document.getElementById("regionFilter").value;
@@ -231,7 +234,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
     item.countries?.some(c => c.toLowerCase() === String(countryCode).toLowerCase())
   );
 
-  panel.innerHTML = `<small>${countryRegion}</small><h2>${countryName}</h2><small>${items.length} digital identit${items.length > 1 ? "ies" : "y"} available</small><hr/>`;
+  panel.innerHTML = `<small>${countryRegion}</small><h2 class="selected-country">${countryName}</h2><small>${items.length} digital identit${items.length > 1 ? "ies" : "y"} available</small><hr/>`;
 
   if (!items.length) {
     panel.innerHTML += "<p class=\"x-small\">No matching identities for current filters.</p>";
@@ -339,7 +342,7 @@ function countSupportedDigitalIdentities() {
     count += item.countries?.length || 0;
   });
   const counter = document.getElementById("counter");
-  counter.innerHTML = `<h3>${count} supported digital identit${count > 1 ? "ies" : "y"}</h3>`;
+  counter.innerHTML = `<h3><span>${count}</span> supported digital identit${count > 1 ? "ies" : "y"}</h3>`;
 }
 
 function clearDetailsPanel() {
