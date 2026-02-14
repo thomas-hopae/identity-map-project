@@ -342,7 +342,7 @@ function countSupportedDigitalIdentities() {
     count += item.countries?.length || 0;
   });
   const counter = document.getElementById("counter");
-  counter.innerHTML = `<h3><span>${count}</span> supported digital identit${count > 1 ? "ies" : "y"}</h3>`;
+  counter.innerHTML = `<h3><span>${count}</span> digital identit${count > 1 ? "ies" : "y"} supported</h3>`;
 }
 
 function clearDetailsPanel() {
