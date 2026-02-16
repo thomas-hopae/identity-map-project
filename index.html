@@ -28,13 +28,12 @@
           >?</a>
         </label>
         <div class="select-with-icon">
-          <select id="typeFilter">
+          <select id="typeFilter" multiple size="4">
             <option value="">All digital ID types</option>
             <option value="1" selected>1. Centralized eID</option>
             <option value="2">2. Digital documents</option>
-            <option value="3">3. Identity Wallet</option>
+            <option value="3" selected>3. Identity Wallet</option>
           </select>
-          <img id="typeFilterIcon" class="filter-icon" alt="" src="icons/type-1-db-id.svg" />
         </div>
       </div>
       <div class="filter-group">
@@ -47,7 +46,7 @@
             aria-label="Learn more about LoA levels"
           >?</a>
         </label>
-        <select id="loaFilter">
+        <select id="loaFilter" multiple size="6">
           <option value="">All LoA</option>
           <option value="1">1. IAL1/AAL1</option>
           <option value="2">2. eIDAS Low - IAL1–2</option>
@@ -58,7 +57,7 @@
       </div>
       <div class="filter-group">
         <label for="regionFilter">Region</label>
-        <select id="regionFilter">
+        <select id="regionFilter" multiple size="6">
           <option value="">All regions</option>
           <option value="Africa">Africa</option>
           <option value="Asia">Asia</option>
@@ -67,6 +66,20 @@
           <option value="Oceania">Oceania</option>
           <option value="South America">South America</option>
         </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="yearFilter">Year of first issuance</label>
+          <div class="year-controls">
+            <select id="yearFilter">
+              <option value="">Any</option>
+            </select>
+            <button id="yearPlayButton" class="play-button" title="Play years" aria-label="Animate years">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 5v14l11-7L8 5z" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
       </div>
 
       <div class="filter-group view-switch-group">
@@ -86,7 +99,9 @@
   </div>
 
   <main class="container layout">
-    <div id="map" class="map-panel"></div>
+    <div id="map" class="map-panel">
+      <div id="activeFilters" class="active-filters"></div>
+    </div>
     <div id="list" class="map-panel list-panel"></div>
     <aside class="details" id="details"><h2>Select a country</h2></aside>
   </main>

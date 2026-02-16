@@ -8,6 +8,10 @@ let map = null;
 let viewMode = 'map';
 let countryMeta = {};
 let selectedCountryCode = null;
+let yearMap = {};
+let yearTimer = null;
+let isYearPlaying = false;
+let yearAnimIndex = 0;
 
 // ----------------------------
 // Type icon helpers (global)
@@ -22,18 +26,7 @@ function getTypeIconPath(t) {
   return map[String(t)] || '';
 }
 
-function updateTypeIcon() {
-  const typeIconEl = document.getElementById('typeFilterIcon');
-  if (!typeIconEl) return;
-  const val = document.getElementById('typeFilter')?.value;
-  const path = getTypeIconPath(val);
-  if (!path) {
-    typeIconEl.style.display = 'none';
-  } else {
-    typeIconEl.src = path;
-    typeIconEl.style.display = 'block';
-  }
-}
+// (removed updateTypeIcon) icons are rendered inside the dropdown options now
 
 // ----------------------------
 // Load data first
@@ -47,9 +40,22 @@ fetch("data.json")
   })
   .then(json => {
     data = json;
-    filteredData = [...data];
-    initMap();
-    initFilters();
+    // load year of first issuance data
+    fetch('yearOfFirstIssuance.json')
+      .then(r => { if (!r.ok) throw new Error('Failed to load yearOfFirstIssuance.json'); return r.json(); })
+      .then(years => {
+        yearMap = {};
+        (years || []).forEach(y => { if (y && y.id) yearMap[y.id] = y.firstIssuanceYear; });
+        filteredData = [...data];
+        initMap();
+        initFilters();
+      })
+      .catch(err => {
+        console.warn('Could not load yearOfFirstIssuance.json:', err);
+        filteredData = [...data];
+        initMap();
+        initFilters();
+      });
   })
   .catch(err => {
     console.error("Data loading error:", err);
@@ -115,14 +121,197 @@ function initMap() {
 // ----------------------------
 // Filters
 // ----------------------------
+// Build a custom multi-select UI from an existing <select multiple>.
+function buildMultiSelect(selectId, placeholder) {
+  const select = document.getElementById(selectId);
+  if (!select) return;
+  // hide native select (keep it for accessibility/form value)
+  select.style.display = 'none';
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'multi-select';
+
+  const toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'ms-toggle';
+  wrapper.appendChild(toggle);
+
+  const dropdown = document.createElement('div');
+  dropdown.className = 'ms-dropdown';
+  dropdown.style.display = 'none';
+
+  Array.from(select.options).forEach(opt => {
+    // skip empty placeholder option in the checkbox list
+    if (!opt.value) return;
+    const label = document.createElement('label');
+    label.className = 'ms-option';
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.value = opt.value;
+    cb.checked = opt.selected;
+    const span = document.createElement('span');
+    span.textContent = opt.text;
+    cb.addEventListener('change', () => {
+      // sync to native select
+      for (let so of select.options) {
+        if (so.value === cb.value) so.selected = cb.checked;
+      }
+      // if no box is checked, ensure the empty option is selected (treated as All)
+      const anyChecked = Array.from(dropdown.querySelectorAll('input[type=checkbox]')).some(i => i.checked);
+      if (!anyChecked) {
+        // clear all native selections
+        for (let so of select.options) so.selected = false;
+      }
+      applyFilters();
+      updateToggleText();
+    });
+    label.appendChild(cb);
+    // if this is the type filter, show the icon for the option inside the dropdown
+    if (selectId === 'typeFilter') {
+      const iconPath = getTypeIconPath(opt.value);
+      if (iconPath) {
+        const img = document.createElement('img');
+        img.src = iconPath;
+        img.alt = '';
+        img.className = 'ms-option-icon';
+        label.appendChild(img);
+      }
+    }
+    label.appendChild(span);
+    dropdown.appendChild(label);
+  });
+
+  wrapper.appendChild(dropdown);
+
+  // insert wrapper immediately after the select element
+  select.parentNode.insertBefore(wrapper, select.nextSibling);
+
+  let isOpen = false;
+  function positionDropdown() {
+    const rect = toggle.getBoundingClientRect();
+    // ensure dropdown is positioned relative to viewport (fixed)
+    dropdown.style.position = 'fixed';
+    dropdown.style.zIndex = '9999';
+    // set left/top with small margin
+    let left = rect.left;
+    let top = rect.bottom + 8;
+    // ensure min-width at least toggle width
+    dropdown.style.minWidth = rect.width + 'px';
+    // adjust horizontal overflow
+    const ddW = dropdown.offsetWidth || 220;
+    if (left + ddW > window.innerWidth - 12) left = Math.max(12, window.innerWidth - ddW - 12);
+    // adjust vertical if not enough space below
+    const ddH = dropdown.offsetHeight || 200;
+    if (top + ddH > window.innerHeight - 12) {
+      // place above toggle
+      top = rect.top - ddH - 8;
+      if (top < 12) top = 12;
+    }
+    dropdown.style.left = left + 'px';
+    dropdown.style.top = top + 'px';
+  }
+
+  function openDropdown() {
+    isOpen = true;
+    dropdown.style.display = 'block';
+    positionDropdown();
+    window.addEventListener('resize', positionDropdown);
+    window.addEventListener('scroll', positionDropdown, true);
+  }
+
+  function closeDropdown() {
+    isOpen = false;
+    dropdown.style.display = 'none';
+    try { window.removeEventListener('resize', positionDropdown); } catch (e) {}
+    try { window.removeEventListener('scroll', positionDropdown, true); } catch (e) {}
+  }
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (isOpen) closeDropdown(); else openDropdown();
+  });
+
+  // close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!wrapper.contains(e.target)) closeDropdown();
+  });
+
+  function updateToggleText() {
+    const selected = Array.from(select.selectedOptions).map(o => o.text).filter(Boolean);
+    if (selected.length) {
+      toggle.textContent = `${selected.length} filters applied`;
+    } else {
+      toggle.textContent = (placeholder || 'All');
+    }
+    // update active filters area
+    try { updateActiveFilters(); } catch (e) {}
+  }
+
+  updateToggleText();
+}
+
 function initFilters() {
+  // build custom multi-select UIs from the native selects
+  buildMultiSelect('typeFilter', 'All digital ID types');
+  buildMultiSelect('loaFilter', 'All LoA');
+  buildMultiSelect('regionFilter', 'All regions');
+  // populate year filter from yearMap (single select)
+  const yearSelect = document.getElementById('yearFilter');
+  if (yearSelect) {
+    // gather unique years (exclude null/undefined), sort ascending
+    const years = Array.from(new Set(Object.values(yearMap).filter(y => y !== null && y !== undefined))).sort((a,b)=>a-b);
+    yearSelect.innerHTML = '<option value="">All years</option>';
+    years.forEach(y => {
+      const opt = document.createElement('option');
+      opt.value = String(y);
+      opt.text = String(y);
+      yearSelect.appendChild(opt);
+    });
+    yearSelect.addEventListener('change', () => { applyFilters(); try { updateActiveFilters(); } catch(e){} });
+    // animation controls for stepping through years
+    const playBtn = document.getElementById('yearPlayButton');
+    const yearOptions = years.slice();
+    function stopYearAnimation() {
+      if (yearTimer) { clearInterval(yearTimer); yearTimer = null; }
+      isYearPlaying = false;
+      yearAnimIndex = 0;
+      if (playBtn) { playBtn.setAttribute('aria-pressed', 'false');
+        playBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 5v14l11-7L8 5z" fill="currentColor"/></svg>`;
+      }
+    }
+    function startYearAnimation() {
+      if (!yearOptions.length) return;
+      // ensure stopped state
+      stopYearAnimation();
+      isYearPlaying = true;
+      if (playBtn) { playBtn.setAttribute('aria-pressed','true'); playBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 6h4v12H6zM14 6h4v12h-4z" fill="currentColor"/></svg>`; }
+      yearAnimIndex = 0;
+      // select first year immediately
+      yearSelect.value = String(yearOptions[yearAnimIndex]);
+      yearSelect.dispatchEvent(new Event('change', { bubbles: true }));
+      yearTimer = setInterval(() => {
+        yearAnimIndex++;
+        if (yearAnimIndex >= yearOptions.length) {
+          stopYearAnimation();
+          return;
+        }
+        yearSelect.value = String(yearOptions[yearAnimIndex]);
+        yearSelect.dispatchEvent(new Event('change', { bubbles: true }));
+      }, 500);
+    }
+    if (playBtn) {
+      playBtn.setAttribute('aria-pressed','false');
+      playBtn.addEventListener('click', () => {
+        if (isYearPlaying) stopYearAnimation(); else startYearAnimation();
+      });
+      // stop animation if user manually changes year
+      yearSelect.addEventListener('change', () => { if (isYearPlaying && document.activeElement !== playBtn) stopYearAnimation(); });
+    }
+  }
   document.getElementById("typeFilter").addEventListener("change", applyFilters);
   document.getElementById("loaFilter").addEventListener("change", applyFilters);
   document.getElementById("regionFilter").addEventListener("change", applyFilters);
   
-  // init & update the small icon next to the type select
-  updateTypeIcon();
-  document.getElementById('typeFilter').addEventListener('change', updateTypeIcon);
   
   const viewToggle = document.getElementById('viewSwitch');
   if (viewToggle) {
@@ -145,33 +334,69 @@ function initFilters() {
   // keep map size in sync on window resize
   window.addEventListener('resize', () => { if (map && typeof map.invalidateSize === 'function') { try { map.invalidateSize(); } catch (e) {} } });
   applyFilters();
+  // ensure active filters area is populated initially
+  try { updateActiveFilters(); } catch (e) {}
+}
+
+// Update the area above the map that shows selected filter values
+function updateActiveFilters() {
+  const container = document.getElementById('activeFilters');
+  if (!container) return;
+  container.innerHTML = '';
+  const filters = [
+    { id: 'typeFilter', label: 'Type' },
+    { id: 'loaFilter', label: 'LoA' },
+    { id: 'regionFilter', label: 'Region' }
+  ];
+
+  filters.forEach(f => {
+    const sel = document.getElementById(f.id);
+    if (!sel) return;
+    const vals = Array.from(sel.selectedOptions).map(o => o.text).filter(Boolean);
+    if (!vals.length) return;
+    const chip = document.createElement('div');
+    chip.className = 'filter-chip';
+    const lbl = document.createElement('span'); lbl.className = 'chip-label'; lbl.textContent = f.label + ':';
+    const v = document.createElement('span'); v.className = 'chip-values'; v.textContent = vals.join(', ');
+    chip.appendChild(lbl);
+    chip.appendChild(v);
+    container.appendChild(chip);
+  });
 }
 
 function applyFilters() {
   // unselect ciountry when filters change
   selectedCountryCode = null;
 
-  const loaValue = document.getElementById("loaFilter").value;
-  const typeValue = document.getElementById("typeFilter").value;
-  const regionValue = document.getElementById("regionFilter").value;
+  const loaValues = Array.from(document.getElementById("loaFilter").selectedOptions).map(o => o.value).filter(Boolean).map(Number);
+  const typeValues = Array.from(document.getElementById("typeFilter").selectedOptions).map(o => o.value).filter(Boolean).map(Number);
+  const regionValues = Array.from(document.getElementById("regionFilter").selectedOptions).map(o => o.value).filter(Boolean);
+  const yearEl = document.getElementById("yearFilter");
+  const yearValue = yearEl && yearEl.value ? Number(yearEl.value) : null;
 
   filteredData = data.filter(item => {
-    if (+loaValue && !item.loa?.includes(+loaValue)) {
-      return false;
+
+    if (loaValues.length) {
+      const itemLoas = (item.loa || []).map(Number);
+      if (!itemLoas.some(l => loaValues.includes(l))) return false;
     }
 
-    if (+typeValue && item.type !== +typeValue) {
-      return false;
+    if (typeValues.length) {
+      if (!typeValues.includes(item.type)) return false;
     }
 
-    if (regionValue) {
+    if (regionValues.length) {
       const itemHasRegion = item.countries?.some(code => {
         const meta = countryMeta[code.toLowerCase()];
-        return meta && meta.region === regionValue;
+        return meta && regionValues.includes(meta.region);
       });
-      if (!itemHasRegion) {
-        return false;
-      }
+      if (!itemHasRegion) return false;
+    }
+
+    if (yearValue !== null) {
+      const y = yearMap[item.id];
+      // exclude items without a known year or with year > selected
+      if (y === undefined || y === null || y > yearValue) return false;
     }
 
     return true;
@@ -187,12 +412,12 @@ function applyFilters() {
 // Map styling
 // ----------------------------
 function getAvailableCountries() {
-  const regionValue = document.getElementById("regionFilter").value;
+  const regionValues = Array.from(document.getElementById("regionFilter").selectedOptions).map(o => o.value).filter(Boolean);
   const set = new Set();
   filteredData.forEach(item => {
     item.countries?.forEach(code => {
       const meta = countryMeta[code.toLowerCase()];
-      if (!regionValue || meta?.region === regionValue) {
+      if (!regionValues.length || regionValues.includes(meta?.region)) {
         set.add(code.toLowerCase());
       }
     });
@@ -249,6 +474,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
         <small>
           <strong>Type:</strong> ${item.type}<br/>
           <strong>LoA:</strong> ${item.loa?.join(", ") || "-"}<br/>
+          <strong>Year of first issuance:</strong> ${yearMap[item.id] ?? '-'}<br/>
           <strong>Flows:</strong> ${item.flowTypes?.join(", ") || "-"}<br/>
           <strong>Scopes:</strong> <ul><li>${item.scopes?.join("</li><li>") || "-"}</li></ul>
         </small>
@@ -261,7 +487,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
 // List view rendering
 // ----------------------------
 function renderListView() {
-  const regionValue = document.getElementById("regionFilter").value;
+  const regionValues = Array.from(document.getElementById("regionFilter").selectedOptions).map(o => o.value).filter(Boolean);
   const listEl = document.getElementById('list');
   if (!listEl) return;
 
@@ -271,7 +497,7 @@ function renderListView() {
     (item.countries || []).forEach(code => {
       const k = code.toLowerCase();
       const meta = countryMeta[k];
-      if (!regionValue || meta?.region === regionValue) {
+      if (!regionValues.length || regionValues.includes(meta?.region)) {
         if (!countryMap[k]) {
           countryMap[k] = { code: k, items: [], name: (meta && meta.name) || k.toUpperCase(), region: (meta && meta.region) || 'Unknown' };
         }
