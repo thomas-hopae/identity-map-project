@@ -459,7 +459,18 @@ function selectCountry(countryCode, countryName, countryRegion) {
     item.countries?.some(c => c.toLowerCase() === String(countryCode).toLowerCase())
   );
 
-  panel.innerHTML = `<small>${countryRegion}</small><h2 class="selected-country">${countryName}</h2><small>${items.length} digital identit${items.length > 1 ? "ies" : "y"} available</small><hr/>`;
+  panel.innerHTML = `
+    <div class="details-header">
+      <div class="details-meta">
+        <small>${countryRegion}</small>
+        <h2 class="selected-country">${countryName}</h2>
+      </div>
+      <div class="details-count">
+        <small>${items.length} digital identit${items.length > 1 ? "ies" : "y"} available</small>
+      </div>
+    </div>
+    <hr/>
+  `;
 
   if (!items.length) {
     panel.innerHTML += "<p class=\"x-small\">No matching identities for current filters.</p>";
@@ -476,7 +487,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
           <strong>LoA:</strong> ${item.loa?.join(", ") || "-"}<br/>
           <strong>Year of first issuance:</strong> ${yearMap[item.id] ?? '-'}<br/>
           <strong>Flows:</strong> ${item.flowTypes?.join(", ") || "-"}<br/>
-          <strong>Scopes:</strong> <ul><li>${item.scopes?.join("</li><li>") || "-"}</li></ul>
+          <strong>Scopes:</strong> <ul style="margin-block-start:0.25em"><li>${item.scopes?.join("</li><li>") || "-"}</li></ul>
         </small>
       </div>
     `;
@@ -575,3 +586,60 @@ function clearDetailsPanel() {
   const panel = document.getElementById("details");
   panel.innerHTML = "<h2>Select a country</h2>";
 }
+
+// ----------------------------
+// Bottom sheet toggle (responsive)
+// ----------------------------
+function initDetailsBottomSheet() {
+  const details = document.getElementById('details');
+  if (!details) return;
+
+  const mq = window.matchMedia('(max-width: 1200px)');
+  const onClick = (e) => {
+    if (!mq.matches) return;
+    details.classList.toggle('expanded');
+  };
+
+  const applyState = () => {
+    if (mq.matches) {
+      details.classList.remove('expanded');
+      details.addEventListener('click', onClick);
+    } else {
+      details.classList.remove('expanded');
+      details.removeEventListener('click', onClick);
+    }
+  };
+
+  applyState();
+  mq.addEventListener('change', applyState);
+}
+
+document.addEventListener('DOMContentLoaded', initDetailsBottomSheet);
+
+// ----------------------------
+// Responsive filters toggle (<=1200px)
+// ----------------------------
+function initResponsiveFiltersToggle() {
+  const topbar = document.querySelector('.topbar');
+  const toggle = document.getElementById('filtersToggle');
+  if (!topbar || !toggle) return;
+
+  const mq = window.matchMedia('(max-width: 1200px)');
+  const applyState = () => {
+    if (!mq.matches) {
+      topbar.classList.remove('filters-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  };
+
+  toggle.addEventListener('click', () => {
+    if (!mq.matches) return;
+    const isOpen = topbar.classList.toggle('filters-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  applyState();
+  mq.addEventListener('change', applyState);
+}
+
+document.addEventListener('DOMContentLoaded', initResponsiveFiltersToggle);
