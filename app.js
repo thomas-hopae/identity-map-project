@@ -340,28 +340,30 @@ function initFilters() {
 
 // Update the area above the map that shows selected filter values
 function updateActiveFilters() {
-  const container = document.getElementById('activeFilters');
-  if (!container) return;
-  container.innerHTML = '';
+  const badge = document.getElementById('filterBadge');
+  if (!badge) return;
+  
   const filters = [
-    { id: 'typeFilter', label: 'Type' },
-    { id: 'loaFilter', label: 'LoA' },
-    { id: 'regionFilter', label: 'Region' }
+    { id: 'typeFilter' },
+    { id: 'loaFilter' },
+    { id: 'regionFilter' }
   ];
 
+  let filterCount = 0;
   filters.forEach(f => {
     const sel = document.getElementById(f.id);
     if (!sel) return;
-    const vals = Array.from(sel.selectedOptions).map(o => o.text).filter(Boolean);
-    if (!vals.length) return;
-    const chip = document.createElement('div');
-    chip.className = 'filter-chip';
-    const lbl = document.createElement('span'); lbl.className = 'chip-label'; lbl.textContent = f.label + ':';
-    const v = document.createElement('span'); v.className = 'chip-values'; v.textContent = vals.join(', ');
-    chip.appendChild(lbl);
-    chip.appendChild(v);
-    container.appendChild(chip);
+    const vals = Array.from(sel.selectedOptions).filter(o => o.value);
+    filterCount += vals.length;
   });
+  
+  // Show/hide badge based on filter count
+  if (filterCount > 0) {
+    badge.textContent = filterCount;
+    badge.classList.add('active');
+  } else {
+    badge.classList.remove('active');
+  }
 }
 
 function applyFilters() {
@@ -473,7 +475,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
   `;
 
   if (!items.length) {
-    panel.innerHTML += "<p class=\"x-small\">No matching identities for current filters.</p>";
+    panel.innerHTML += "<p class=\"small\">No matching identities for current filters.</p>";
     return;
   }
 
@@ -545,12 +547,12 @@ function renderListView() {
         return p ? `<img src="${p}" class="list-type-icon" alt="type-${t}"/>` : '';
       }).join('');
 
-      html += `<a href="#" class="country-link x-small" data-code="${c.code}" data-name="${c.name}" data-region="${c.region}">${c.name}</a>${typeIcons}<br/>`;
+      html += `<a href="#" class="country-link small" data-code="${c.code}" data-name="${c.name}" data-region="${c.region}">${c.name}</a>${typeIcons}<br/>`;
     });
     html += `</section>`;
   });
 
-  if (!html) html = '<div class="x-small" style="padding:18px">No countries match current filters.</div>';
+  if (!html) html = '<div class="small" style="padding:18px">No countries match current filters.</div>';
   listEl.innerHTML = html;
 
   // wire click handlers for the country links to reuse selectCountry

@@ -97,21 +97,16 @@
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M3 5h18l-7 8v5l-4 2v-7L3 5z" fill="currentColor"/>
         </svg>
+        <span class="filter-badge" id="filterBadge"></span>
       </button>
     </div>
   </div>
 
   <main class="container layout">
-    <div id="map" class="map-panel">
-      <div id="activeFilters" class="active-filters"></div>
-    </div>
+    <div id="map" class="map-panel"></div>
     <div id="list" class="map-panel list-panel"></div>
     <aside class="details" id="details"><h2>Select a country</h2></aside>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">© 2026 Identity Map</div>
-  </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="app.js"></script>
