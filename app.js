@@ -547,7 +547,7 @@ function renderListView() {
         return p ? `<img src="${p}" class="list-type-icon" alt="type-${t}"/>` : '';
       }).join('');
 
-      html += `<a href="#" class="country-link small" data-code="${c.code}" data-name="${c.name}" data-region="${c.region}">${c.name}</a>${typeIcons}<br/>`;
+      html += `<div class="country-item"><a href="#" class="country-link small" data-code="${c.code}" data-name="${c.name}" data-region="${c.region}">${c.name}</a>${typeIcons}</div>`;
     });
     html += `</section>`;
   });
@@ -581,7 +581,7 @@ function countSupportedDigitalIdentities() {
     count += item.countries?.length || 0;
   });
   const counter = document.getElementById("counter");
-  counter.innerHTML = `<h3><span>${count}</span> digital identit${count > 1 ? "ies" : "y"} supported</h3>`;
+  counter.innerHTML = `<h3><span>${count}</span><small> digital identit${count > 1 ? "ies" : "y"} supported</small></h3>`;
 }
 
 function clearDetailsPanel() {
