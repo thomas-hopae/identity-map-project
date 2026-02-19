@@ -1,2660 +1,2753 @@
 [
-  {
-    "id": "kmdl",
-    "logoUrl": "https://static.hopae.com/images/wallets/kmdl.png",
-    "name": "Mobile ID",
-    "countries": [
-      "kr"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "name",
-      "birthdate",
-      "nationality"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 3,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "eudi-pid",
-    "logoUrl": "https://static.hopae.com/images/wallets/eudi-wallet.png",
-    "name": "EUDI PID",
-    "countries": [
-      "at",
-      "be",
-      "bg",
-      "hr",
-      "cy",
-      "cz",
-      "dk",
-      "ee",
-      "fi",
-      "fr",
-      "de",
-      "gr",
-      "hu",
-      "ie",
-      "it",
-      "lv",
-      "lt",
-      "lu",
-      "mt",
-      "nl",
-      "pl",
-      "pt",
-      "ro",
-      "sk",
-      "si",
-      "es",
-      "se"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 3,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "bankidse",
-    "logoUrl": "https://static.hopae.com/images/wallets/bankidse.png",
-    "name": "BankID Sweden",
-    "countries": [
-      "se"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "family_name",
-      "given_name",
-      "ssn",
-      "ssn_issuing_country",
-      "auth_device_ip"
-    ],
-    "loa": [
-      2,
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "frejaid",
-    "logoUrl": "https://static.hopae.com/images/wallets/frejaid.png",
-    "name": "FrejaID",
-    "countries": [
-      "se",
-      "dk",
-      "no",
-      "fi"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "address",
-      "birthdate",
-      "email",
-      "family_name",
-      "given_name",
-      "name",
-      "nationality",
-      "picture",
-      "ssn",
-      "age",
-      "document",
-      "registrationLevel",
-      "relyingPartyUserId",
-      "integratorSpecificUserId",
-      "uniquePersonalIdentifier"
-    ],
-    "loa": [
-      3,
-      2
-    ],
-    "defaultLoa": 2,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "audkenni",
-    "logoUrl": "https://static.hopae.com/images/wallets/audkenni.png",
-    "name": "Audkenni",
-    "countries": [
-      "is"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "birthdate",
-      "name"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "smartid",
-    "logoUrl": "https://static.hopae.com/images/wallets/smartid.png",
-    "name": "Smart ID",
-    "countries": [
-      "ee",
-      "lt",
-      "lv"
-    ],
-    "isActive": true,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "nationality",
-      "personal_code"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "evrotrust",
-    "logoUrl": "https://static.hopae.com/images/wallets/evrotrust.png",
-    "name": "Evrotrust",
-    "countries": [
-      "bg"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "address",
-      "birthdate",
-      "email",
-      "family_name",
-      "gender",
-      "given_name",
-      "name",
-      "nationality",
-      "phone_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "singpass",
-    "logoUrl": "https://static.hopae.com/images/wallets/singpass.png",
-    "name": "Singpass",
-    "countries": [
-      "sg"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "birthdate",
-      "email",
-      "gender",
-      "name",
-      "nationality",
-      "phone_number",
-      "race",
-      "uinfin"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "mitid",
-    "logoUrl": "https://static.hopae.com/images/wallets/mitid.png",
-    "name": "MitID",
-    "countries": [
-      "dk"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "birthdate",
-      "ssn",
-      "dk_ssn"
-    ],
-    "loa": [
-      3,
-      4,
-      2
-    ],
-    "defaultLoa": 2,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "idin",
-    "logoUrl": "https://static.hopae.com/images/wallets/idin.png",
-    "name": "iDIN",
-    "countries": [
-      "nl"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "address",
-      "family_name",
-      "birthdate",
-      "gender",
-      "email",
-      "phone_number"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ftn",
-    "logoUrl": "https://static.hopae.com/images/wallets/ftn.png",
-    "name": "FTN",
-    "countries": [
-      "fi"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "birthdate",
-      "family_name",
-      "given_name",
-      "name",
-      "ssn",
-      "fi_ssn",
-      "fi_tupas_pid",
-      "fi_tupas_bank",
-      "ssn_issuing_country"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "no-bankid",
-    "logoUrl": "https://static.hopae.com/images/wallets/no-bankid.png",
-    "name": "BankID Norway",
-    "countries": [
-      "no"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "birthdate",
-      "family_name",
-      "given_name",
-      "name",
-      "nationality"
-    ],
-    "loa": [
-      4,
-      3,
-      2
-    ],
-    "defaultLoa": 2,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "buypass",
-    "logoUrl": "https://static.hopae.com/images/wallets/buypass.jpg",
-    "name": "Buypass",
-    "countries": [
-      "no"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "ssn"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "verimi",
-    "logoUrl": "https://static.hopae.com/images/wallets/verimi.jpg",
-    "name": "Verimi",
-    "countries": [
-      "de"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "email",
-      "phone_number",
-      "address"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "be-cardreader",
-    "logoUrl": "https://static.hopae.com/images/wallets/beid.png",
-    "name": "Belgian eID (Card Reader)",
-    "countries": [
-      "be"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "address",
-      "card_number",
-      "card_expiry_date",
-      "citizenship",
-      "ssn",
-      "place_of_birth",
-      "ssn_issuing_country"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "skmobileid",
-    "logoUrl": "https://static.hopae.com/images/wallets/skmobileid.png",
-    "name": "SK Mobile ID",
-    "countries": [
-      "ee",
-      "lv"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "nationality",
-      "personal_code"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ausweisapp",
-    "logoUrl": "https://static.hopae.com/images/wallets/ausweisapp.png",
-    "name": "Personalausweis",
-    "countries": [
-      "de"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "address",
-      "birthdate",
-      "family_name",
-      "given_name",
-      "name",
-      "nationality"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "linlp",
-    "logoUrl": "https://static.hopae.com/images/wallets/linlp.png",
-    "name": "L'Identité Numérique LaPoste",
-    "countries": [
-      "fr"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "gender",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "birthplace",
-      "birthcountry",
-      "ccu_id",
-      "preferred_username",
-      "birthdepartment",
-      "nationality",
-      "email",
-      "email_verified",
-      "phone_number",
-      "phone_number_verified"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "cmd",
-    "logoUrl": "https://static.hopae.com/images/wallets/cmd.png",
-    "name": "Chave Móvel Digital",
-    "countries": [
-      "pt"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "birthdate",
-      "family_name",
-      "given_name",
-      "name",
-      "phone_number",
-      "DataValidade",
-      "DataValidadeDoc",
-      "DocNationality",
-      "DocType",
-      "NIF",
-      "NISS",
-      "NSNS"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "diia",
-    "logoUrl": "https://static.hopae.com/images/wallets/diia.png",
-    "name": "Diia",
-    "countries": [
-      "ua"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "name",
-      "subjDRFOCode"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "passport",
-    "logoUrl": "https://static.hopae.com/images/wallets/passport.png",
-    "name": "Passport",
-    "countries": [
-      "kr",
-      "jp",
-      "cn",
-      "tw",
-      "hk",
-      "mo",
-      "in",
-      "pk",
-      "bd",
-      "lk",
-      "np",
-      "my",
-      "sg",
-      "th",
-      "vn",
-      "ph",
-      "id",
-      "kh",
-      "la",
-      "mm",
-      "mn",
-      "kz",
-      "uz",
-      "bn",
-      "tl",
-      "kg",
-      "tj",
-      "tm",
-      "af",
-      "bt",
-      "mv",
-      "ae",
-      "sa",
-      "il",
-      "tr",
-      "ir",
-      "iq",
-      "jo",
-      "lb",
-      "kw",
-      "qa",
-      "bh",
-      "om",
-      "ye",
-      "sy",
-      "ps",
-      "gb",
-      "ie",
-      "fr",
-      "es",
-      "pt",
-      "it",
-      "de",
-      "nl",
-      "be",
-      "lu",
-      "ch",
-      "at",
-      "dk",
-      "se",
-      "no",
-      "fi",
-      "is",
-      "pl",
-      "cz",
-      "sk",
-      "hu",
-      "ro",
-      "bg",
-      "gr",
-      "cy",
-      "mt",
-      "hr",
-      "si",
-      "rs",
-      "ba",
-      "me",
-      "mk",
-      "al",
-      "ee",
-      "lv",
-      "lt",
-      "ua",
-      "by",
-      "md",
-      "ru",
-      "ge",
-      "am",
-      "az",
-      "li",
-      "mc",
-      "sm",
-      "va",
-      "ad",
-      "xk",
-      "eg",
-      "za",
-      "ng",
-      "ke",
-      "et",
-      "gh",
-      "ug",
-      "ma",
-      "dz",
-      "tn",
-      "ly",
-      "sd",
-      "ss",
-      "mr",
-      "sn",
-      "ml",
-      "bf",
-      "ne",
-      "gn",
-      "ci",
-      "tg",
-      "bj",
-      "lr",
-      "sl",
-      "gm",
-      "gw",
-      "cv",
-      "tz",
-      "so",
-      "rw",
-      "bi",
-      "dj",
-      "er",
-      "sc",
-      "mu",
-      "km",
-      "mg",
-      "cm",
-      "cf",
-      "td",
-      "cg",
-      "cd",
-      "ga",
-      "gq",
-      "st",
-      "ao",
-      "zm",
-      "zw",
-      "mz",
-      "bw",
-      "na",
-      "sz",
-      "ls",
-      "mw",
-      "us",
-      "ca",
-      "mx",
-      "bm",
-      "gt",
-      "bz",
-      "sv",
-      "hn",
-      "ni",
-      "cr",
-      "pa",
-      "cu",
-      "jm",
-      "ht",
-      "do",
-      "pr",
-      "bs",
-      "bb",
-      "tt",
-      "ag",
-      "lc",
-      "vc",
-      "gd",
-      "dm",
-      "kn",
-      "aw",
-      "cw",
-      "ky",
-      "vg",
-      "vi",
-      "br",
-      "ar",
-      "cl",
-      "co",
-      "pe",
-      "ec",
-      "ve",
-      "uy",
-      "py",
-      "bo",
-      "gy",
-      "sr",
-      "au",
-      "nz",
-      "fj",
-      "pg",
-      "ws",
-      "to",
-      "vu",
-      "sb",
-      "tv",
-      "ki",
-      "nr",
-      "pw",
-      "mh",
-      "fm",
-      "nc",
-      "pf",
-      "ck"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "at-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/at.jpg",
-    "name": "Austrian ID Card",
-    "countries": [
-      "at"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "be-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/be.jpg",
-    "name": "Belgian ID Card",
-    "countries": [
-      "be"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "fr-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/fr.jpg",
-    "name": "French ID Card",
-    "countries": [
-      "fr"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "de-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/de.jpg",
-    "name": "German ID Card",
-    "countries": [
-      "de"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "it-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/it.jpg",
-    "name": "Italian ID Card",
-    "countries": [
-      "it"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "lu-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/lu.jpg",
-    "name": "Luxembourgish ID Card",
-    "countries": [
-      "lu"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "mt-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/mt.jpg",
-    "name": "Maltese ID Card",
-    "countries": [
-      "mt"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "pt-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/pt.jpg",
-    "name": "Portuguese ID Card",
-    "countries": [
-      "pt"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ro-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/ro.jpg",
-    "name": "Romanian ID Card",
-    "countries": [
-      "ro"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "se-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/se.jpg",
-    "name": "Swedish ID Card",
-    "countries": [
-      "se"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "bg-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/bg.jpg",
-    "name": "Bulgarian ID Card",
-    "countries": [
-      "bg"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "hr-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/hr.jpg",
-    "name": "Croatian ID Card",
-    "countries": [
-      "hr"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "cy-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/cy.jpg",
-    "name": "Cypriot ID Card",
-    "countries": [
-      "cy"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "cz-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/cz.jpg",
-    "name": "Czech ID Card",
-    "countries": [
-      "cz"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ee-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/ee.jpg",
-    "name": "Estonian ID Card",
-    "countries": [
-      "ee"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "fi-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/fi.jpg",
-    "name": "Finnish ID Card",
-    "countries": [
-      "fi"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "gr-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/gr.jpg",
-    "name": "Greek ID Card",
-    "countries": [
-      "gr"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "hu-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/hu.jpg",
-    "name": "Hungarian ID Card",
-    "countries": [
-      "hu"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ie-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/ie.jpg",
-    "name": "Irish ID Card",
-    "countries": [
-      "ie"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "lv-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/lv.jpg",
-    "name": "Latvian ID Card",
-    "countries": [
-      "lv"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "lt-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/lt.jpg",
-    "name": "Lithuanian ID Card",
-    "countries": [
-      "lt"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "nl-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/nl.jpg",
-    "name": "Dutch ID Card",
-    "countries": [
-      "nl"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "pl-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/pl.jpg",
-    "name": "Polish ID Card",
-    "countries": [
-      "pl"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "sk-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/sk.jpg",
-    "name": "Slovak ID Card",
-    "countries": [
-      "sk"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "si-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/si.jpg",
-    "name": "Slovenian ID Card",
-    "countries": [
-      "si"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "es-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/es.jpg",
-    "name": "Spanish ID Card",
-    "countries": [
-      "es"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "is-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/is.jpg",
-    "name": "Icelandic ID Card",
-    "countries": [
-      "is"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "li-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/li.jpg",
-    "name": "Liechtenstein ID Card",
-    "countries": [
-      "li"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "no-idcard",
-    "logoUrl": "https://static.hopae.com/images/wallets/no.jpg",
-    "name": "Norwegian ID Card",
-    "countries": [
-      "no"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "qr"
-    ],
-    "scopes": [
-      "document_number",
-      "name",
-      "family_name",
-      "given_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "expiry_date",
-      "personal_number",
-      "picture"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 2,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "aadhaar",
-    "logoUrl": "https://static.hopae.com/images/wallets/aadhaar.png",
-    "name": "Aadhaar",
-    "countries": [
-      "in"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "picture",
-      "address"
-    ],
-    "loa": [
-      2
-    ],
-    "defaultLoa": 2,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "uaepass",
-    "logoUrl": "https://static.hopae.com/images/wallets/uaepass.png",
-    "name": "UAE Pass",
-    "countries": [
-      "ae"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "email",
-      "family_name",
-      "gender",
-      "given_name",
-      "name",
-      "nationality",
-      "phone_number"
-    ],
-    "loa": [
-      4,
-      2
-    ],
-    "defaultLoa": 2,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "oneid",
-    "logoUrl": "https://static.hopae.com/images/wallets/oneid.jpg",
-    "name": "OneID",
-    "countries": [
-      "gb"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "address"
-    ],
-    "loa": [
-      4,
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "mojeidcz",
-    "logoUrl": "https://static.hopae.com/images/wallets/mojeid-cz.png",
-    "name": "CZ mojeID",
-    "countries": [
-      "cz"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "given_name",
-      "nationality",
-      "family_name",
-      "birthdate",
-      "mojeid_ident_ssn"
-    ],
-    "loa": [
-      2,
-      3,
-      4
-    ],
-    "defaultLoa": 2,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "id-austria",
-    "logoUrl": "https://static.hopae.com/images/wallets/id-austria.png",
-    "name": "ID Austria",
-    "countries": [
-      "at"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "given_name",
-      "family_name",
-      "birthdate",
-      "nationality"
-    ],
-    "loa": [
-      4
-    ],
-    "defaultLoa": 4,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "bankid-cz",
-    "logoUrl": "https://static.hopae.com/images/wallets/bankidcz.svg",
-    "name": "BankID CZ",
-    "countries": [
-      "cz"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "preferred_username",
-      "email",
-      "email_verified",
-      "phone_number",
-      "phone_number_verified",
-      "gender",
-      "birthdate",
-      "zoneinfo",
-      "locale",
-      "updated_at",
-      "address"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ng-nin",
-    "logoUrl": "https://static.hopae.com/images/wallets/nimc.svg",
-    "name": "Nigeria NIN",
-    "countries": [
-      "ng"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "middle_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "phone_number",
-      "picture"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "spid-ig",
-    "logoUrl": "https://static.hopae.com/images/wallets/spid.png",
-    "name": "SPID",
-    "countries": [
-      "it"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate"
-    ],
-    "loa": [
-      3,
-      4,
-      2
-    ],
-    "defaultLoa": 2,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ug-nin",
-    "logoUrl": "https://static.hopae.com/images/wallets/ug-nin.jpg",
-    "name": "Uganda NIN",
-    "countries": [
-      "ug"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "given_name",
-      "middle_name",
-      "family_name",
-      "birthdate"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "kenya-nid",
-    "logoUrl": "https://static.hopae.com/images/wallets/kenya-nid.png",
-    "name": "Kenya NID",
-    "countries": [
-      "ke"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "given_name",
-      "middle_name",
-      "family_name",
-      "gender",
-      "birthdate"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "kenya-pass",
-    "logoUrl": "https://static.hopae.com/images/wallets/kenya-nid.png",
-    "name": "Kenya Passport",
-    "countries": [
-      "ke"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "given_name",
-      "middle_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "address"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ng-bvn",
-    "logoUrl": "https://static.hopae.com/images/wallets/ng-bvn.jpg",
-    "name": "Nigeria BVN",
-    "countries": [
-      "ng"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "middle_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "phone_number",
-      "picture",
-      "email",
-      "nationality"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "zw-nin",
-    "logoUrl": "https://static.hopae.com/images/wallets/zimbabwe-id.jpg",
-    "name": "Zimbabwe NIN",
-    "countries": [
-      "zw"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "angola-nin",
-    "logoUrl": "https://static.hopae.com/images/wallets/angola-nin.jpg",
-    "name": "Angola NIN",
-    "countries": [
-      "ao"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "phone_number",
-      "address"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ghana-pass",
-    "logoUrl": "https://static.hopae.com/images/wallets/ghana-id.jpg",
-    "name": "Ghana Passport",
-    "countries": [
-      "gh"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "middle_name",
-      "pictire"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ghana-vid",
-    "logoUrl": "https://static.hopae.com/images/wallets/ghana-id.jpg",
-    "name": "Ghana Voter ID",
-    "countries": [
-      "gh"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "gender",
-      "age",
-      "picture"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "mx-curp",
-    "logoUrl": "https://static.hopae.com/images/wallets/mexico-curp.jpg",
-    "name": "Mexico CURP",
-    "countries": [
-      "mx"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "given_name",
-      "gender",
-      "birthdate"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "br-cpf",
-    "logoUrl": "https://static.hopae.com/images/wallets/brazil-cpf.jpg",
-    "name": "Brazil CPF",
-    "countries": [
-      "br"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "birthdate"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "peru-dni",
-    "logoUrl": "https://static.hopae.com/images/wallets/peru-dni.jpg",
-    "name": "Peru DNI",
-    "countries": [
-      "pe"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "gender",
-      "address",
-      "dni",
-      "paternalLastName",
-      "maternalLastName",
-      "civilStatus",
-      "ubigeoReniec",
-      "verificationDigit"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "vipps-cr",
-    "logoUrl": "https://static.hopae.com/images/wallets/vipps.jpg",
-    "name": "Norwegian Vipps",
-    "countries": [
-      "no"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "email",
-      "phone_number",
-      "birthdate",
-      "address",
-      "nationality"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ng-vid",
-    "logoUrl": "https://static.hopae.com/images/wallets/ng-vid.jpg",
-    "name": "Nigeria Voter ID",
-    "countries": [
-      "ng"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "nationality",
-      "address",
-      "phone_number",
-      "picture",
-      "IDType",
-      "IDNumber",
-      "Country"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "kenya-alien",
-    "logoUrl": "https://static.hopae.com/images/wallets/kenya-alien.jpg",
-    "name": "Kenya Alien Card",
-    "countries": [
-      "ke"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "nationality",
-      "address",
-      "IDType",
-      "IDNumber",
-      "Country"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ci-nid",
-    "logoUrl": "https://static.hopae.com/images/wallets/ci-id.jpg",
-    "name": "Côte d'Ivoire National ID",
-    "countries": [
-      "ci"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "nationality",
-      "address",
-      "IDType",
-      "IDNumber",
-      "Country",
-      "SecondaryIDNumber"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ci-rid",
-    "logoUrl": "https://static.hopae.com/images/wallets/ci-id.jpg",
-    "name": "Côte d'Ivoire Resident ID",
-    "countries": [
-      "ci"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "nationality",
-      "address",
-      "IDType",
-      "IDNumber",
-      "Country",
-      "SecondaryIDNumber"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ng-vnin",
-    "logoUrl": "https://static.hopae.com/images/wallets/ng-vnin.jpg",
-    "name": "Nigeria Virtual NIN",
-    "countries": [
-      "ng"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "birthdate",
-      "picture",
-      "name",
-      "family_name",
-      "given_name",
-      "gender",
-      "phone_number",
-      "IDType",
-      "IDNumber",
-      "Country",
-      "SecondaryIDNumber"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "za-refugee",
-    "logoUrl": "https://static.hopae.com/images/wallets/za-refugee.jpg",
-    "name": "South Africa Refugee ID",
-    "countries": [
-      "za"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "nationality",
-      "picture",
-      "IDType",
-      "IDNumber",
-      "Country",
-      "ExpirationDate",
-      "SecondaryIDNumber",
-      "PlaceOfIssuance",
-      "IDStatus"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "ghana-card",
-    "logoUrl": "https://static.hopae.com/images/wallets/ghana-card.jpg",
-    "name": "Ghana Card",
-    "countries": [
-      "gh"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "phone_number",
-      "picture",
-      "IDType",
-      "IDNumber",
-      "Country",
-      "ExpirationDate",
-      "IssuanceDate",
-      "SecondaryIDNumber"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "za-nid",
-    "logoUrl": "https://static.hopae.com/images/wallets/za-nid.jpg",
-    "name": "South Africa National ID",
-    "countries": [
-      "za"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "middle_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "picture",
-      "nationality"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "connectid",
-    "logoUrl": "https://static.hopae.com/images/wallets/connectID.jpg",
-    "name": "Connect ID",
-    "countries": [
-      "au"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "email",
-      "phone_number",
-      "birthdate",
-      "middle_name"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "digidentity",
-    "logoUrl": "https://static.hopae.com/images/wallets/DigIdentity.jpg",
-    "name": "Digidentity",
-    "countries": [
-      "nl"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "given_name",
-      "family_name",
-      "gender",
-      "birthdate",
-      "email",
-      "email_verified",
-      "preferred_username"
-    ],
-    "loa": [
-      3,
-      4
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "id-nik",
-    "logoUrl": "https://static.hopae.com/images/wallets/indonesia_nik.jpg",
-    "name": "Indonesia NIK",
-    "countries": [
-      "id"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "push"
-    ],
-    "scopes": [
-      "name",
-      "birthdate",
-      "national_id_number"
-    ],
-    "loa": [
-      1
-    ],
-    "defaultLoa": 1,
-    "type": 1,
-    "supportedIdWallets": []
-  },
-  {
-    "id": "yoti",
-    "logoUrl": "https://static.hopae.com/images/wallets/yoti.jpg",
-    "name": "Yoti",
-    "countries": [
-      "gb"
-    ],
-    "isActive": false,
-    "needAction": false,
-    "flowTypes": [
-      "redirect"
-    ],
-    "scopes": [
-      "name",
-      "given_name",
-      "family_name",
-      "birthdate",
-      "gender",
-      "nationality",
-      "phone_number",
-      "email",
-      "address"
-    ],
-    "loa": [
-      3
-    ],
-    "defaultLoa": 3,
-    "type": 1,
-    "supportedIdWallets": []
-  }
+    {
+        "id": "kmdl",
+        "logoUrl": "https://static.hopae.com/images/wallets/kmdl.png",
+        "name": "Mobile ID",
+        "countries": [
+            "kr"
+        ],
+        "isActive": true,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "name",
+            "birthdate",
+            "nationality"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 3,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "us-id-pass",
+        "logoUrl": "https://static.hopae.com/images/wallets/us.jpg",
+        "name": "US Digital Passport",
+        "countries": [
+            "us"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "dc"
+        ],
+        "scopes": [
+            "family_name",
+            "given_name",
+            "birthdate",
+            "picture",
+            "gender",
+            "nationality",
+            "issue_date",
+            "expiry_date",
+            "issuing_country",
+            "issuing_authority",
+            "document_number",
+            "age_over_18",
+            "age_over_21"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 3,
+        "supportedIdWallets": [
+            "google-wallet"
+        ]
+    },
+    {
+        "id": "us-mdl",
+        "logoUrl": "https://static.hopae.com/images/wallets/us.jpg",
+        "name": "US Mobile Driver License",
+        "countries": [
+            "us"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "dc"
+        ],
+        "scopes": [
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "document_number",
+            "issue_date",
+            "issuing_authority",
+            "expiry_date",
+            "issuing_country"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 3,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "eudi-pid",
+        "logoUrl": "https://static.hopae.com/images/wallets/eudi-wallet.png",
+        "name": "EUDI PID",
+        "countries": [
+            "at",
+            "be",
+            "bg",
+            "hr",
+            "cy",
+            "cz",
+            "dk",
+            "ee",
+            "fi",
+            "fr",
+            "de",
+            "gr",
+            "hu",
+            "ie",
+            "it",
+            "lv",
+            "lt",
+            "lu",
+            "mt",
+            "nl",
+            "pl",
+            "pt",
+            "ro",
+            "sk",
+            "si",
+            "es",
+            "se"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 3,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "bankidse",
+        "logoUrl": "https://static.hopae.com/images/wallets/bankidse.png",
+        "name": "BankID Sweden",
+        "countries": [
+            "se"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "family_name",
+            "given_name",
+            "ssn",
+            "ssn_issuing_country",
+            "auth_device_ip"
+        ],
+        "loa": [
+            2,
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "frejaid",
+        "logoUrl": "https://static.hopae.com/images/wallets/frejaid.png",
+        "name": "FrejaID",
+        "countries": [
+            "se",
+            "dk",
+            "no",
+            "fi"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "address",
+            "birthdate",
+            "email",
+            "family_name",
+            "given_name",
+            "name",
+            "nationality",
+            "picture",
+            "ssn",
+            "age",
+            "document",
+            "registrationLevel",
+            "relyingPartyUserId",
+            "integratorSpecificUserId",
+            "uniquePersonalIdentifier"
+        ],
+        "loa": [
+            3,
+            2
+        ],
+        "defaultLoa": 2,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "audkenni",
+        "logoUrl": "https://static.hopae.com/images/wallets/audkenni.png",
+        "name": "Audkenni",
+        "countries": [
+            "is"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "birthdate",
+            "name"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "smartid",
+        "logoUrl": "https://static.hopae.com/images/wallets/smartid.png",
+        "name": "Smart ID",
+        "countries": [
+            "ee",
+            "lt",
+            "lv"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "nationality",
+            "personal_code"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "evrotrust",
+        "logoUrl": "https://static.hopae.com/images/wallets/evrotrust.png",
+        "name": "Evrotrust",
+        "countries": [
+            "bg"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "address",
+            "birthdate",
+            "email",
+            "family_name",
+            "gender",
+            "given_name",
+            "name",
+            "nationality",
+            "phone_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "singpass",
+        "logoUrl": "https://static.hopae.com/images/wallets/singpass.png",
+        "name": "Singpass",
+        "countries": [
+            "sg"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "birthdate",
+            "email",
+            "gender",
+            "name",
+            "nationality",
+            "phone_number",
+            "race",
+            "uinfin"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "mitid",
+        "logoUrl": "https://static.hopae.com/images/wallets/mitid.png",
+        "name": "MitID",
+        "countries": [
+            "dk"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "birthdate",
+            "ssn",
+            "dk_ssn"
+        ],
+        "loa": [
+            3,
+            4,
+            2
+        ],
+        "defaultLoa": 2,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "idin",
+        "logoUrl": "https://static.hopae.com/images/wallets/idin.png",
+        "name": "iDIN",
+        "countries": [
+            "nl"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "address",
+            "family_name",
+            "birthdate",
+            "gender",
+            "email",
+            "phone_number"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ftn",
+        "logoUrl": "https://static.hopae.com/images/wallets/ftn.png",
+        "name": "FTN",
+        "countries": [
+            "fi"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "birthdate",
+            "family_name",
+            "given_name",
+            "name",
+            "ssn",
+            "fi_ssn",
+            "fi_tupas_pid",
+            "fi_tupas_bank",
+            "ssn_issuing_country"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "no-bankid",
+        "logoUrl": "https://static.hopae.com/images/wallets/no-bankid.png",
+        "name": "BankID Norway",
+        "countries": [
+            "no"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "birthdate",
+            "family_name",
+            "given_name",
+            "name",
+            "nationality"
+        ],
+        "loa": [
+            4,
+            3,
+            2
+        ],
+        "defaultLoa": 2,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "buypass",
+        "logoUrl": "https://static.hopae.com/images/wallets/buypass.jpg",
+        "name": "Buypass",
+        "countries": [
+            "no"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "ssn"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "verimi",
+        "logoUrl": "https://static.hopae.com/images/wallets/verimi.jpg",
+        "name": "Verimi",
+        "countries": [
+            "de"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "email",
+            "phone_number",
+            "address"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "be-cardreader",
+        "logoUrl": "https://static.hopae.com/images/wallets/beid.png",
+        "name": "Belgian eID (Card Reader)",
+        "countries": [
+            "be"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "address",
+            "card_number",
+            "card_expiry_date",
+            "citizenship",
+            "ssn",
+            "place_of_birth",
+            "ssn_issuing_country"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "skmobileid",
+        "logoUrl": "https://static.hopae.com/images/wallets/skmobileid.png",
+        "name": "SK Mobile ID",
+        "countries": [
+            "ee",
+            "lv"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "nationality",
+            "personal_code"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ausweisapp",
+        "logoUrl": "https://static.hopae.com/images/wallets/ausweisapp.png",
+        "name": "Personalausweis",
+        "countries": [
+            "de"
+        ],
+        "isActive": true,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "address",
+            "birthdate",
+            "family_name",
+            "given_name",
+            "name",
+            "nationality"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "linlp",
+        "logoUrl": "https://static.hopae.com/images/wallets/linlp.png",
+        "name": "L'Identité Numérique LaPoste",
+        "countries": [
+            "fr"
+        ],
+        "isActive": true,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "gender",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "birthplace",
+            "birthcountry",
+            "ccu_id",
+            "preferred_username",
+            "birthdepartment",
+            "nationality",
+            "email",
+            "email_verified",
+            "phone_number",
+            "phone_number_verified"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "cmd",
+        "logoUrl": "https://static.hopae.com/images/wallets/cmd.png",
+        "name": "Chave Móvel Digital",
+        "countries": [
+            "pt"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "birthdate",
+            "family_name",
+            "given_name",
+            "name",
+            "phone_number",
+            "DataValidade",
+            "DataValidadeDoc",
+            "DocNationality",
+            "DocType",
+            "NIF",
+            "NISS",
+            "NSNS"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "diia",
+        "logoUrl": "https://static.hopae.com/images/wallets/diia.png",
+        "name": "Diia",
+        "countries": [
+            "ua"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "name",
+            "subjDRFOCode"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "passport",
+        "logoUrl": "https://static.hopae.com/images/wallets/passport.png",
+        "name": "Passport",
+        "countries": [
+            "kr",
+            "jp",
+            "cn",
+            "tw",
+            "hk",
+            "mo",
+            "in",
+            "pk",
+            "bd",
+            "lk",
+            "np",
+            "my",
+            "sg",
+            "th",
+            "vn",
+            "ph",
+            "id",
+            "kh",
+            "la",
+            "mm",
+            "mn",
+            "kz",
+            "uz",
+            "bn",
+            "tl",
+            "kg",
+            "tj",
+            "tm",
+            "af",
+            "bt",
+            "mv",
+            "ae",
+            "sa",
+            "il",
+            "tr",
+            "ir",
+            "iq",
+            "jo",
+            "lb",
+            "kw",
+            "qa",
+            "bh",
+            "om",
+            "ye",
+            "sy",
+            "ps",
+            "gb",
+            "ie",
+            "fr",
+            "es",
+            "pt",
+            "it",
+            "de",
+            "nl",
+            "be",
+            "lu",
+            "ch",
+            "at",
+            "dk",
+            "se",
+            "no",
+            "fi",
+            "is",
+            "pl",
+            "cz",
+            "sk",
+            "hu",
+            "ro",
+            "bg",
+            "gr",
+            "cy",
+            "mt",
+            "hr",
+            "si",
+            "rs",
+            "ba",
+            "me",
+            "mk",
+            "al",
+            "ee",
+            "lv",
+            "lt",
+            "ua",
+            "by",
+            "md",
+            "ru",
+            "ge",
+            "am",
+            "az",
+            "li",
+            "mc",
+            "sm",
+            "va",
+            "ad",
+            "xk",
+            "eg",
+            "za",
+            "ng",
+            "ke",
+            "et",
+            "gh",
+            "ug",
+            "ma",
+            "dz",
+            "tn",
+            "ly",
+            "sd",
+            "ss",
+            "mr",
+            "sn",
+            "ml",
+            "bf",
+            "ne",
+            "gn",
+            "ci",
+            "tg",
+            "bj",
+            "lr",
+            "sl",
+            "gm",
+            "gw",
+            "cv",
+            "tz",
+            "so",
+            "rw",
+            "bi",
+            "dj",
+            "er",
+            "sc",
+            "mu",
+            "km",
+            "mg",
+            "cm",
+            "cf",
+            "td",
+            "cg",
+            "cd",
+            "ga",
+            "gq",
+            "st",
+            "ao",
+            "zm",
+            "zw",
+            "mz",
+            "bw",
+            "na",
+            "sz",
+            "ls",
+            "mw",
+            "us",
+            "ca",
+            "mx",
+            "bm",
+            "gt",
+            "bz",
+            "sv",
+            "hn",
+            "ni",
+            "cr",
+            "pa",
+            "cu",
+            "jm",
+            "ht",
+            "do",
+            "pr",
+            "bs",
+            "bb",
+            "tt",
+            "ag",
+            "lc",
+            "vc",
+            "gd",
+            "dm",
+            "kn",
+            "aw",
+            "cw",
+            "ky",
+            "vg",
+            "vi",
+            "br",
+            "ar",
+            "cl",
+            "co",
+            "pe",
+            "ec",
+            "ve",
+            "uy",
+            "py",
+            "bo",
+            "gy",
+            "sr",
+            "au",
+            "nz",
+            "fj",
+            "pg",
+            "ws",
+            "to",
+            "vu",
+            "sb",
+            "tv",
+            "ki",
+            "nr",
+            "pw",
+            "mh",
+            "fm",
+            "nc",
+            "pf",
+            "ck"
+        ],
+        "isActive": true,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "at-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/at.jpg",
+        "name": "Austrian ID Card",
+        "countries": [
+            "at"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "be-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/be.jpg",
+        "name": "Belgian ID Card",
+        "countries": [
+            "be"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "fr-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/fr.jpg",
+        "name": "French ID Card",
+        "countries": [
+            "fr"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "de-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/de.jpg",
+        "name": "German ID Card",
+        "countries": [
+            "de"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "it-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/it.jpg",
+        "name": "Italian ID Card",
+        "countries": [
+            "it"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "lu-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/lu.jpg",
+        "name": "Luxembourgish ID Card",
+        "countries": [
+            "lu"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "mt-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/mt.jpg",
+        "name": "Maltese ID Card",
+        "countries": [
+            "mt"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "pt-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/pt.jpg",
+        "name": "Portuguese ID Card",
+        "countries": [
+            "pt"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ro-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/ro.jpg",
+        "name": "Romanian ID Card",
+        "countries": [
+            "ro"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "se-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/se.jpg",
+        "name": "Swedish ID Card",
+        "countries": [
+            "se"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "bg-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/bg.jpg",
+        "name": "Bulgarian ID Card",
+        "countries": [
+            "bg"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "hr-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/hr.jpg",
+        "name": "Croatian ID Card",
+        "countries": [
+            "hr"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "cy-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/cy.jpg",
+        "name": "Cypriot ID Card",
+        "countries": [
+            "cy"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "cz-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/cz.jpg",
+        "name": "Czech ID Card",
+        "countries": [
+            "cz"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ee-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/ee.jpg",
+        "name": "Estonian ID Card",
+        "countries": [
+            "ee"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "fi-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/fi.jpg",
+        "name": "Finnish ID Card",
+        "countries": [
+            "fi"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "gr-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/gr.jpg",
+        "name": "Greek ID Card",
+        "countries": [
+            "gr"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "hu-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/hu.jpg",
+        "name": "Hungarian ID Card",
+        "countries": [
+            "hu"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ie-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/ie.jpg",
+        "name": "Irish ID Card",
+        "countries": [
+            "ie"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "lv-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/lv.jpg",
+        "name": "Latvian ID Card",
+        "countries": [
+            "lv"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "lt-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/lt.jpg",
+        "name": "Lithuanian ID Card",
+        "countries": [
+            "lt"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "nl-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/nl.jpg",
+        "name": "Dutch ID Card",
+        "countries": [
+            "nl"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "pl-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/pl.jpg",
+        "name": "Polish ID Card",
+        "countries": [
+            "pl"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "sk-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/sk.jpg",
+        "name": "Slovak ID Card",
+        "countries": [
+            "sk"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "si-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/si.jpg",
+        "name": "Slovenian ID Card",
+        "countries": [
+            "si"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "es-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/es.jpg",
+        "name": "Spanish ID Card",
+        "countries": [
+            "es"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "is-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/is.jpg",
+        "name": "Icelandic ID Card",
+        "countries": [
+            "is"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "li-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/li.jpg",
+        "name": "Liechtenstein ID Card",
+        "countries": [
+            "li"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "no-idcard",
+        "logoUrl": "https://static.hopae.com/images/wallets/no.jpg",
+        "name": "Norwegian ID Card",
+        "countries": [
+            "no"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "document_number",
+            "name",
+            "family_name",
+            "given_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "expiry_date",
+            "personal_number",
+            "picture"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 2,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "aadhaar",
+        "logoUrl": "https://static.hopae.com/images/wallets/aadhaar.png",
+        "name": "Aadhaar",
+        "countries": [
+            "in"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "picture",
+            "address"
+        ],
+        "loa": [
+            2
+        ],
+        "defaultLoa": 2,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "edoapp",
+        "logoUrl": "https://static.hopae.com/images/wallets/edoapp.png",
+        "name": "eDO App",
+        "countries": [
+            "pl"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "qr"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "middle_name",
+            "family_name",
+            "birthdate",
+            "nationality"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "uaepass",
+        "logoUrl": "https://static.hopae.com/images/wallets/uaepass.png",
+        "name": "UAE Pass",
+        "countries": [
+            "ae"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "email",
+            "family_name",
+            "gender",
+            "given_name",
+            "name",
+            "nationality",
+            "phone_number"
+        ],
+        "loa": [
+            4,
+            2
+        ],
+        "defaultLoa": 2,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "oneid",
+        "logoUrl": "https://static.hopae.com/images/wallets/oneid.jpg",
+        "name": "OneID",
+        "countries": [
+            "gb"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "address"
+        ],
+        "loa": [
+            4,
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "mojeidcz",
+        "logoUrl": "https://static.hopae.com/images/wallets/mojeid-cz.png",
+        "name": "CZ mojeID",
+        "countries": [
+            "cz"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "given_name",
+            "nationality",
+            "family_name",
+            "birthdate",
+            "mojeid_ident_ssn"
+        ],
+        "loa": [
+            2,
+            3,
+            4
+        ],
+        "defaultLoa": 2,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "id-austria",
+        "logoUrl": "https://static.hopae.com/images/wallets/id-austria.png",
+        "name": "ID Austria",
+        "countries": [
+            "at"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "given_name",
+            "family_name",
+            "birthdate",
+            "nationality"
+        ],
+        "loa": [
+            4
+        ],
+        "defaultLoa": 4,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "bankid-cz",
+        "logoUrl": "https://static.hopae.com/images/wallets/bankidcz.svg",
+        "name": "BankID CZ",
+        "countries": [
+            "cz"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "preferred_username",
+            "email",
+            "email_verified",
+            "phone_number",
+            "phone_number_verified",
+            "gender",
+            "birthdate",
+            "zoneinfo",
+            "locale",
+            "updated_at",
+            "address"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ng-nin",
+        "logoUrl": "https://static.hopae.com/images/wallets/nimc.svg",
+        "name": "Nigeria NIN",
+        "countries": [
+            "ng"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "middle_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "phone_number",
+            "picture"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "spid-ig",
+        "logoUrl": "https://static.hopae.com/images/wallets/spid.png",
+        "name": "SPID",
+        "countries": [
+            "it"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate"
+        ],
+        "loa": [
+            3,
+            4,
+            2
+        ],
+        "defaultLoa": 2,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ug-nin",
+        "logoUrl": "https://static.hopae.com/images/wallets/ug-nin.jpg",
+        "name": "Uganda NIN",
+        "countries": [
+            "ug"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "given_name",
+            "middle_name",
+            "family_name",
+            "birthdate"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "kenya-nid",
+        "logoUrl": "https://static.hopae.com/images/wallets/kenya-nid.png",
+        "name": "Kenya NID",
+        "countries": [
+            "ke"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "given_name",
+            "middle_name",
+            "family_name",
+            "gender",
+            "birthdate"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "kenya-pass",
+        "logoUrl": "https://static.hopae.com/images/wallets/kenya-nid.png",
+        "name": "Kenya Passport",
+        "countries": [
+            "ke"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "given_name",
+            "middle_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "address"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ng-bvn",
+        "logoUrl": "https://static.hopae.com/images/wallets/ng-bvn.jpg",
+        "name": "Nigeria BVN",
+        "countries": [
+            "ng"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "middle_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "phone_number",
+            "picture",
+            "email",
+            "nationality"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "zw-nin",
+        "logoUrl": "https://static.hopae.com/images/wallets/zimbabwe-id.jpg",
+        "name": "Zimbabwe NIN",
+        "countries": [
+            "zw"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "angola-nin",
+        "logoUrl": "https://static.hopae.com/images/wallets/angola-nin.jpg",
+        "name": "Angola NIN",
+        "countries": [
+            "ao"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "phone_number",
+            "address"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ghana-pass",
+        "logoUrl": "https://static.hopae.com/images/wallets/ghana-id.jpg",
+        "name": "Ghana Passport",
+        "countries": [
+            "gh"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "middle_name",
+            "pictire"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ghana-vid",
+        "logoUrl": "https://static.hopae.com/images/wallets/ghana-id.jpg",
+        "name": "Ghana Voter ID",
+        "countries": [
+            "gh"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "gender",
+            "age",
+            "picture"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "mx-curp",
+        "logoUrl": "https://static.hopae.com/images/wallets/mexico-curp.jpg",
+        "name": "Mexico CURP",
+        "countries": [
+            "mx"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "given_name",
+            "gender",
+            "birthdate"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "br-cpf",
+        "logoUrl": "https://static.hopae.com/images/wallets/brazil-cpf.jpg",
+        "name": "Brazil CPF",
+        "countries": [
+            "br"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "birthdate"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "peru-dni",
+        "logoUrl": "https://static.hopae.com/images/wallets/peru-dni.jpg",
+        "name": "Peru DNI",
+        "countries": [
+            "pe"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "gender",
+            "address",
+            "dni",
+            "paternalLastName",
+            "maternalLastName",
+            "civilStatus",
+            "ubigeoReniec",
+            "verificationDigit"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "vipps-cr",
+        "logoUrl": "https://static.hopae.com/images/wallets/vipps.jpg",
+        "name": "Norwegian Vipps",
+        "countries": [
+            "no"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "email",
+            "phone_number",
+            "birthdate",
+            "address",
+            "nationality"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ng-vid",
+        "logoUrl": "https://static.hopae.com/images/wallets/ng-vid.jpg",
+        "name": "Nigeria Voter ID",
+        "countries": [
+            "ng"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "nationality",
+            "address",
+            "phone_number",
+            "picture",
+            "IDType",
+            "IDNumber",
+            "Country"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "kenya-alien",
+        "logoUrl": "https://static.hopae.com/images/wallets/kenya-alien.jpg",
+        "name": "Kenya Alien Card",
+        "countries": [
+            "ke"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "nationality",
+            "address",
+            "IDType",
+            "IDNumber",
+            "Country"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ci-nid",
+        "logoUrl": "https://static.hopae.com/images/wallets/ci-id.jpg",
+        "name": "Côte d'Ivoire National ID",
+        "countries": [
+            "ci"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "nationality",
+            "address",
+            "IDType",
+            "IDNumber",
+            "Country",
+            "SecondaryIDNumber"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ci-rid",
+        "logoUrl": "https://static.hopae.com/images/wallets/ci-id.jpg",
+        "name": "Côte d'Ivoire Resident ID",
+        "countries": [
+            "ci"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "nationality",
+            "address",
+            "IDType",
+            "IDNumber",
+            "Country",
+            "SecondaryIDNumber"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ng-vnin",
+        "logoUrl": "https://static.hopae.com/images/wallets/ng-vnin.jpg",
+        "name": "Nigeria Virtual NIN",
+        "countries": [
+            "ng"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "birthdate",
+            "picture",
+            "name",
+            "family_name",
+            "given_name",
+            "gender",
+            "phone_number",
+            "IDType",
+            "IDNumber",
+            "Country",
+            "SecondaryIDNumber"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "za-refugee",
+        "logoUrl": "https://static.hopae.com/images/wallets/za-refugee.jpg",
+        "name": "South Africa Refugee ID",
+        "countries": [
+            "za"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "nationality",
+            "picture",
+            "IDType",
+            "IDNumber",
+            "Country",
+            "ExpirationDate",
+            "SecondaryIDNumber",
+            "PlaceOfIssuance",
+            "IDStatus"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "ghana-card",
+        "logoUrl": "https://static.hopae.com/images/wallets/ghana-card.jpg",
+        "name": "Ghana Card",
+        "countries": [
+            "gh"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "phone_number",
+            "picture",
+            "IDType",
+            "IDNumber",
+            "Country",
+            "ExpirationDate",
+            "IssuanceDate",
+            "SecondaryIDNumber"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "za-nid",
+        "logoUrl": "https://static.hopae.com/images/wallets/za-nid.jpg",
+        "name": "South Africa National ID",
+        "countries": [
+            "za"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "middle_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "picture",
+            "nationality"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "connectid",
+        "logoUrl": "https://static.hopae.com/images/wallets/connectID.jpg",
+        "name": "Connect ID",
+        "countries": [
+            "au"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "email",
+            "phone_number",
+            "birthdate",
+            "middle_name"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "digidentity",
+        "logoUrl": "https://static.hopae.com/images/wallets/DigIdentity.jpg",
+        "name": "Digidentity",
+        "countries": [
+            "nl"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "given_name",
+            "family_name",
+            "gender",
+            "birthdate",
+            "email",
+            "email_verified",
+            "preferred_username"
+        ],
+        "loa": [
+            3,
+            4
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "id-nik",
+        "logoUrl": "https://static.hopae.com/images/wallets/indonesia_nik.jpg",
+        "name": "Indonesia NIK",
+        "countries": [
+            "id"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "push"
+        ],
+        "scopes": [
+            "name",
+            "birthdate",
+            "national_id_number"
+        ],
+        "loa": [
+            1
+        ],
+        "defaultLoa": 1,
+        "type": 1,
+        "supportedIdWallets": []
+    },
+    {
+        "id": "yoti",
+        "logoUrl": "https://static.hopae.com/images/wallets/yoti.jpg",
+        "name": "Yoti",
+        "countries": [
+            "gb"
+        ],
+        "isActive": false,
+        "needAction": false,
+        "flowTypes": [
+            "redirect"
+        ],
+        "scopes": [
+            "name",
+            "given_name",
+            "family_name",
+            "birthdate",
+            "gender",
+            "nationality",
+            "phone_number",
+            "email",
+            "address"
+        ],
+        "loa": [
+            3
+        ],
+        "defaultLoa": 3,
+        "type": 1,
+        "supportedIdWallets": []
+    }
 ]
