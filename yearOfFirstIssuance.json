@@ -4,7 +4,9 @@
     "type": 3,
     "firstIssuanceYear": 2020,
     "name": "Mobile ID",
-    "countries": ["kr"],
+    "countries": [
+      "kr"
+    ],
     "typeName": "Identity Wallet"
   },
   {
@@ -12,7 +14,35 @@
     "type": 3,
     "firstIssuanceYear": 2023,
     "name": "EUDI PID",
-    "countries": ["at", "be", "bg", "hr", "cy", "cz", "dk", "ee", "fi", "fr", "de", "gr", "hu", "ie", "it", "lv", "lt", "lu", "mt", "nl", "pl", "pt", "ro", "sk", "si", "es", "se"],
+    "countries": [
+      "at",
+      "be",
+      "bg",
+      "hr",
+      "cy",
+      "cz",
+      "dk",
+      "ee",
+      "fi",
+      "fr",
+      "de",
+      "gr",
+      "hu",
+      "ie",
+      "it",
+      "lv",
+      "lt",
+      "lu",
+      "mt",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "si",
+      "es",
+      "se"
+    ],
     "typeName": "Identity Wallet"
   },
   {
@@ -20,7 +50,9 @@
     "type": 1,
     "firstIssuanceYear": 2003,
     "name": "BankID Sweden",
-    "countries": ["se"],
+    "countries": [
+      "se"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -28,7 +60,12 @@
     "type": 1,
     "firstIssuanceYear": 2017,
     "name": "FrejaID",
-    "countries": ["se", "dk", "no", "fi"],
+    "countries": [
+      "se",
+      "dk",
+      "no",
+      "fi"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -36,7 +73,9 @@
     "type": 1,
     "firstIssuanceYear": 2020,
     "name": "Audkenni",
-    "countries": ["is"],
+    "countries": [
+      "is"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -44,7 +83,11 @@
     "type": 1,
     "firstIssuanceYear": 2017,
     "name": "Smart ID",
-    "countries": ["ee", "lt", "lv"],
+    "countries": [
+      "ee",
+      "lt",
+      "lv"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -52,7 +95,9 @@
     "type": 1,
     "firstIssuanceYear": 2018,
     "name": "Evrotrust",
-    "countries": ["bg"],
+    "countries": [
+      "bg"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -60,7 +105,9 @@
     "type": 1,
     "firstIssuanceYear": 2003,
     "name": "Singpass",
-    "countries": ["sg"],
+    "countries": [
+      "sg"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -68,7 +115,9 @@
     "type": 1,
     "firstIssuanceYear": 2021,
     "name": "MitID",
-    "countries": ["dk"],
+    "countries": [
+      "dk"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -76,7 +125,9 @@
     "type": 1,
     "firstIssuanceYear": 2016,
     "name": "iDIN",
-    "countries": ["nl"],
+    "countries": [
+      "nl"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -84,7 +135,9 @@
     "type": 1,
     "firstIssuanceYear": 2019,
     "name": "FTN",
-    "countries": ["fi"],
+    "countries": [
+      "fi"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -92,7 +145,9 @@
     "type": 1,
     "firstIssuanceYear": 2004,
     "name": "BankID Norway",
-    "countries": ["no"],
+    "countries": [
+      "no"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -100,7 +155,9 @@
     "type": 1,
     "firstIssuanceYear": 2009,
     "name": "Buypass",
-    "countries": ["no"],
+    "countries": [
+      "no"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -108,7 +165,9 @@
     "type": 1,
     "firstIssuanceYear": 2018,
     "name": "Verimi",
-    "countries": ["de"],
+    "countries": [
+      "de"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -116,7 +175,9 @@
     "type": 2,
     "firstIssuanceYear": 2003,
     "name": "Belgian eID (Card Reader)",
-    "countries": ["be"],
+    "countries": [
+      "be"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -124,7 +185,10 @@
     "type": 1,
     "firstIssuanceYear": 2007,
     "name": "SK Mobile ID",
-    "countries": ["ee", "lv"],
+    "countries": [
+      "ee",
+      "lv"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -132,7 +196,9 @@
     "type": 1,
     "firstIssuanceYear": 2010,
     "name": "Personalausweis",
-    "countries": ["de"],
+    "countries": [
+      "de"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -140,7 +206,9 @@
     "type": 1,
     "firstIssuanceYear": 2022,
     "name": "L'Identité Numérique LaPoste",
-    "countries": ["fr"],
+    "countries": [
+      "fr"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -148,7 +216,9 @@
     "type": 1,
     "firstIssuanceYear": 2014,
     "name": "Chave Móvel Digital",
-    "countries": ["pt"],
+    "countries": [
+      "pt"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -156,7 +226,9 @@
     "type": 1,
     "firstIssuanceYear": 2020,
     "name": "Diia",
-    "countries": ["ua"],
+    "countries": [
+      "ua"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -164,7 +236,216 @@
     "type": 2,
     "firstIssuanceYear": 2006,
     "name": "Passport",
-    "countries": ["kr", "jp", "cn", "tw", "hk", "mo", "in", "pk", "bd", "lk", "np", "my", "sg", "th", "vn", "ph", "id", "kh", "la", "mm", "mn", "kz", "uz", "bn", "tl", "kg", "tj", "tm", "af", "bt", "mv", "ae", "sa", "il", "tr", "ir", "iq", "jo", "lb", "kw", "qa", "bh", "om", "ye", "sy", "ps", "gb", "ie", "fr", "es", "pt", "it", "de", "nl", "be", "lu", "ch", "at", "dk", "se", "no", "fi", "is", "pl", "cz", "sk", "hu", "ro", "bg", "gr", "cy", "mt", "hr", "si", "rs", "ba", "me", "mk", "al", "ee", "lv", "lt", "ua", "by", "md", "ru", "ge", "am", "az", "li", "mc", "sm", "va", "ad", "xk", "eg", "za", "ng", "ke", "et", "gh", "ug", "ma", "dz", "tn", "ly", "sd", "ss", "mr", "sn", "ml", "bf", "ne", "gn", "ci", "tg", "bj", "lr", "sl", "gm", "gw", "cv", "tz", "so", "rw", "bi", "dj", "er", "sc", "mu", "km", "mg", "cm", "cf", "td", "cg", "cd", "ga", "gq", "st", "ao", "zm", "zw", "mz", "bw", "na", "sz", "ls", "mw", "us", "ca", "mx", "bm", "gt", "bz", "sv", "hn", "ni", "cr", "pa", "cu", "jm", "ht", "do", "pr", "bs", "bb", "tt", "ag", "lc", "vc", "gd", "dm", "kn", "aw", "cw", "ky", "vg", "vi", "br", "ar", "cl", "co", "pe", "ec", "ve", "uy", "py", "bo", "gy", "sr", "au", "nz", "fj", "pg", "ws", "to", "vu", "sb", "tv", "ki", "nr", "pw", "mh", "fm", "nc", "pf", "ck"],
+    "countries": [
+      "kr",
+      "jp",
+      "cn",
+      "tw",
+      "hk",
+      "mo",
+      "in",
+      "pk",
+      "bd",
+      "lk",
+      "np",
+      "my",
+      "sg",
+      "th",
+      "vn",
+      "ph",
+      "id",
+      "kh",
+      "la",
+      "mm",
+      "mn",
+      "kz",
+      "uz",
+      "bn",
+      "tl",
+      "kg",
+      "tj",
+      "tm",
+      "af",
+      "bt",
+      "mv",
+      "ae",
+      "sa",
+      "il",
+      "tr",
+      "ir",
+      "iq",
+      "jo",
+      "lb",
+      "kw",
+      "qa",
+      "bh",
+      "om",
+      "ye",
+      "sy",
+      "ps",
+      "gb",
+      "ie",
+      "fr",
+      "es",
+      "pt",
+      "it",
+      "de",
+      "nl",
+      "be",
+      "lu",
+      "ch",
+      "at",
+      "dk",
+      "se",
+      "no",
+      "fi",
+      "is",
+      "pl",
+      "cz",
+      "sk",
+      "hu",
+      "ro",
+      "bg",
+      "gr",
+      "cy",
+      "mt",
+      "hr",
+      "si",
+      "rs",
+      "ba",
+      "me",
+      "mk",
+      "al",
+      "ee",
+      "lv",
+      "lt",
+      "ua",
+      "by",
+      "md",
+      "ru",
+      "ge",
+      "am",
+      "az",
+      "li",
+      "mc",
+      "sm",
+      "va",
+      "ad",
+      "xk",
+      "eg",
+      "za",
+      "ng",
+      "ke",
+      "et",
+      "gh",
+      "ug",
+      "ma",
+      "dz",
+      "tn",
+      "ly",
+      "sd",
+      "ss",
+      "mr",
+      "sn",
+      "ml",
+      "bf",
+      "ne",
+      "gn",
+      "ci",
+      "tg",
+      "bj",
+      "lr",
+      "sl",
+      "gm",
+      "gw",
+      "cv",
+      "tz",
+      "so",
+      "rw",
+      "bi",
+      "dj",
+      "er",
+      "sc",
+      "mu",
+      "km",
+      "mg",
+      "cm",
+      "cf",
+      "td",
+      "cg",
+      "cd",
+      "ga",
+      "gq",
+      "st",
+      "ao",
+      "zm",
+      "zw",
+      "mz",
+      "bw",
+      "na",
+      "sz",
+      "ls",
+      "mw",
+      "us",
+      "ca",
+      "mx",
+      "bm",
+      "gt",
+      "bz",
+      "sv",
+      "hn",
+      "ni",
+      "cr",
+      "pa",
+      "cu",
+      "jm",
+      "ht",
+      "do",
+      "pr",
+      "bs",
+      "bb",
+      "tt",
+      "ag",
+      "lc",
+      "vc",
+      "gd",
+      "dm",
+      "kn",
+      "aw",
+      "cw",
+      "ky",
+      "vg",
+      "vi",
+      "br",
+      "ar",
+      "cl",
+      "co",
+      "pe",
+      "ec",
+      "ve",
+      "uy",
+      "py",
+      "bo",
+      "gy",
+      "sr",
+      "au",
+      "nz",
+      "fj",
+      "pg",
+      "ws",
+      "to",
+      "vu",
+      "sb",
+      "tv",
+      "ki",
+      "nr",
+      "pw",
+      "mh",
+      "fm",
+      "nc",
+      "pf",
+      "ck"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -172,7 +453,9 @@
     "type": 2,
     "firstIssuanceYear": 2021,
     "name": "Austrian ID Card",
-    "countries": ["at"],
+    "countries": [
+      "at"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -180,7 +463,9 @@
     "type": 2,
     "firstIssuanceYear": 2003,
     "name": "Belgian ID Card",
-    "countries": ["be"],
+    "countries": [
+      "be"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -188,7 +473,9 @@
     "type": 2,
     "firstIssuanceYear": 2021,
     "name": "French ID Card",
-    "countries": ["fr"],
+    "countries": [
+      "fr"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -196,7 +483,9 @@
     "type": 2,
     "firstIssuanceYear": 2010,
     "name": "German ID Card",
-    "countries": ["de"],
+    "countries": [
+      "de"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -204,7 +493,9 @@
     "type": 2,
     "firstIssuanceYear": 2016,
     "name": "Italian ID Card",
-    "countries": ["it"],
+    "countries": [
+      "it"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -212,7 +503,9 @@
     "type": 2,
     "firstIssuanceYear": 2014,
     "name": "Luxembourgish ID Card",
-    "countries": ["lu"],
+    "countries": [
+      "lu"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -220,7 +513,9 @@
     "type": 2,
     "firstIssuanceYear": 2014,
     "name": "Maltese ID Card",
-    "countries": ["mt"],
+    "countries": [
+      "mt"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -228,7 +523,9 @@
     "type": 2,
     "firstIssuanceYear": 2007,
     "name": "Portuguese ID Card",
-    "countries": ["pt"],
+    "countries": [
+      "pt"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -236,7 +533,9 @@
     "type": 2,
     "firstIssuanceYear": 2021,
     "name": "Romanian ID Card",
-    "countries": ["ro"],
+    "countries": [
+      "ro"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -244,7 +543,9 @@
     "type": 2,
     "firstIssuanceYear": 2005,
     "name": "Swedish ID Card",
-    "countries": ["se"],
+    "countries": [
+      "se"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -252,7 +553,9 @@
     "type": 2,
     "firstIssuanceYear": 2010,
     "name": "Bulgarian ID Card",
-    "countries": ["bg"],
+    "countries": [
+      "bg"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -260,7 +563,9 @@
     "type": 2,
     "firstIssuanceYear": 2015,
     "name": "Croatian ID Card",
-    "countries": ["hr"],
+    "countries": [
+      "hr"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -268,7 +573,9 @@
     "type": 2,
     "firstIssuanceYear": 2020,
     "name": "Cypriot ID Card",
-    "countries": ["cy"],
+    "countries": [
+      "cy"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -276,7 +583,9 @@
     "type": 2,
     "firstIssuanceYear": 2012,
     "name": "Czech ID Card",
-    "countries": ["cz"],
+    "countries": [
+      "cz"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -284,7 +593,9 @@
     "type": 2,
     "firstIssuanceYear": 2002,
     "name": "Estonian ID Card",
-    "countries": ["ee"],
+    "countries": [
+      "ee"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -292,7 +603,9 @@
     "type": 2,
     "firstIssuanceYear": 2017,
     "name": "Finnish ID Card",
-    "countries": ["fi"],
+    "countries": [
+      "fi"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -300,7 +613,9 @@
     "type": 2,
     "firstIssuanceYear": 2023,
     "name": "Greek ID Card",
-    "countries": ["gr"],
+    "countries": [
+      "gr"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -308,7 +623,9 @@
     "type": 2,
     "firstIssuanceYear": 2016,
     "name": "Hungarian ID Card",
-    "countries": ["hu"],
+    "countries": [
+      "hu"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -316,7 +633,9 @@
     "type": 2,
     "firstIssuanceYear": 2015,
     "name": "Irish ID Card",
-    "countries": ["ie"],
+    "countries": [
+      "ie"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -324,7 +643,9 @@
     "type": 2,
     "firstIssuanceYear": 2012,
     "name": "Latvian ID Card",
-    "countries": ["lv"],
+    "countries": [
+      "lv"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -332,7 +653,9 @@
     "type": 2,
     "firstIssuanceYear": 2009,
     "name": "Lithuanian ID Card",
-    "countries": ["lt"],
+    "countries": [
+      "lt"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -340,7 +663,9 @@
     "type": 2,
     "firstIssuanceYear": 2021,
     "name": "Dutch ID Card",
-    "countries": ["nl"],
+    "countries": [
+      "nl"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -348,7 +673,9 @@
     "type": 2,
     "firstIssuanceYear": 2019,
     "name": "Polish ID Card",
-    "countries": ["pl"],
+    "countries": [
+      "pl"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -356,7 +683,9 @@
     "type": 2,
     "firstIssuanceYear": 2013,
     "name": "Slovak ID Card",
-    "countries": ["sk"],
+    "countries": [
+      "sk"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -364,7 +693,9 @@
     "type": 2,
     "firstIssuanceYear": 2022,
     "name": "Slovenian ID Card",
-    "countries": ["si"],
+    "countries": [
+      "si"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -372,7 +703,9 @@
     "type": 2,
     "firstIssuanceYear": 2006,
     "name": "Spanish ID Card",
-    "countries": ["es"],
+    "countries": [
+      "es"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -380,7 +713,9 @@
     "type": 2,
     "firstIssuanceYear": 2020,
     "name": "Icelandic ID Card",
-    "countries": ["is"],
+    "countries": [
+      "is"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -388,7 +723,9 @@
     "type": 2,
     "firstIssuanceYear": 2009,
     "name": "Liechtenstein ID Card",
-    "countries": ["li"],
+    "countries": [
+      "li"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -396,7 +733,9 @@
     "type": 2,
     "firstIssuanceYear": 2020,
     "name": "Norwegian ID Card",
-    "countries": ["no"],
+    "countries": [
+      "no"
+    ],
     "typeName": "Digital documents"
   },
   {
@@ -404,7 +743,9 @@
     "type": 1,
     "firstIssuanceYear": 2010,
     "name": "Aadhaar",
-    "countries": ["in"],
+    "countries": [
+      "in"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -412,7 +753,9 @@
     "type": 1,
     "firstIssuanceYear": 2018,
     "name": "UAE Pass",
-    "countries": ["ae"],
+    "countries": [
+      "ae"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -420,7 +763,9 @@
     "type": 1,
     "firstIssuanceYear": 2021,
     "name": "OneID",
-    "countries": ["gb"],
+    "countries": [
+      "gb"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -428,7 +773,9 @@
     "type": 1,
     "firstIssuanceYear": 2011,
     "name": "CZ mojeID",
-    "countries": ["cz"],
+    "countries": [
+      "cz"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -436,7 +783,9 @@
     "type": 1,
     "firstIssuanceYear": 2023,
     "name": "ID Austria",
-    "countries": ["at"],
+    "countries": [
+      "at"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -444,7 +793,9 @@
     "type": 1,
     "firstIssuanceYear": 2021,
     "name": "BankID CZ",
-    "countries": ["cz"],
+    "countries": [
+      "cz"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -452,7 +803,9 @@
     "type": 1,
     "firstIssuanceYear": 2007,
     "name": "Nigeria NIN",
-    "countries": ["ng"],
+    "countries": [
+      "ng"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -460,7 +813,9 @@
     "type": 1,
     "firstIssuanceYear": 2016,
     "name": "SPID",
-    "countries": ["it"],
+    "countries": [
+      "it"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -468,7 +823,9 @@
     "type": 1,
     "firstIssuanceYear": 2014,
     "name": "Uganda NIN",
-    "countries": ["ug"],
+    "countries": [
+      "ug"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -476,7 +833,9 @@
     "type": 1,
     "firstIssuanceYear": 2019,
     "name": "Kenya NID",
-    "countries": ["ke"],
+    "countries": [
+      "ke"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -484,7 +843,9 @@
     "type": 1,
     "firstIssuanceYear": 2017,
     "name": "Kenya Passport",
-    "countries": ["ke"],
+    "countries": [
+      "ke"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -492,7 +853,9 @@
     "type": 1,
     "firstIssuanceYear": 2014,
     "name": "Nigeria BVN",
-    "countries": ["ng"],
+    "countries": [
+      "ng"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -500,7 +863,9 @@
     "type": 1,
     "firstIssuanceYear": 2022,
     "name": "Zimbabwe NIN",
-    "countries": ["zw"],
+    "countries": [
+      "zw"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -508,7 +873,9 @@
     "type": 1,
     "firstIssuanceYear": 2017,
     "name": "Angola NIN",
-    "countries": ["ao"],
+    "countries": [
+      "ao"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -516,7 +883,9 @@
     "type": 1,
     "firstIssuanceYear": 2010,
     "name": "Ghana Passport",
-    "countries": ["gh"],
+    "countries": [
+      "gh"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -524,7 +893,9 @@
     "type": 1,
     "firstIssuanceYear": 2020,
     "name": "Ghana Voter ID",
-    "countries": ["gh"],
+    "countries": [
+      "gh"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -532,7 +903,9 @@
     "type": 1,
     "firstIssuanceYear": 2017,
     "name": "Mexico CURP",
-    "countries": ["mx"],
+    "countries": [
+      "mx"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -540,7 +913,9 @@
     "type": 1,
     "firstIssuanceYear": 2020,
     "name": "Brazil CPF",
-    "countries": ["br"],
+    "countries": [
+      "br"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -548,7 +923,9 @@
     "type": 1,
     "firstIssuanceYear": 2013,
     "name": "Peru DNI",
-    "countries": ["pe"],
+    "countries": [
+      "pe"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -556,7 +933,9 @@
     "type": 1,
     "firstIssuanceYear": 2015,
     "name": "Norwegian Vipps",
-    "countries": ["no"],
+    "countries": [
+      "no"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -564,7 +943,9 @@
     "type": 1,
     "firstIssuanceYear": 2011,
     "name": "Nigeria Voter ID",
-    "countries": ["ng"],
+    "countries": [
+      "ng"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -572,7 +953,9 @@
     "type": 1,
     "firstIssuanceYear": 2012,
     "name": "Kenya Alien Card",
-    "countries": ["ke"],
+    "countries": [
+      "ke"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -580,7 +963,9 @@
     "type": 1,
     "firstIssuanceYear": 2020,
     "name": "Côte d'Ivoire National ID",
-    "countries": ["ci"],
+    "countries": [
+      "ci"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -588,7 +973,9 @@
     "type": 1,
     "firstIssuanceYear": 2020,
     "name": "Côte d'Ivoire Resident ID",
-    "countries": ["ci"],
+    "countries": [
+      "ci"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -596,7 +983,9 @@
     "type": 1,
     "firstIssuanceYear": 2020,
     "name": "Nigeria Virtual NIN",
-    "countries": ["ng"],
+    "countries": [
+      "ng"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -604,7 +993,9 @@
     "type": 1,
     "firstIssuanceYear": 2015,
     "name": "South Africa Refugee ID",
-    "countries": ["za"],
+    "countries": [
+      "za"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -612,7 +1003,9 @@
     "type": 1,
     "firstIssuanceYear": 2018,
     "name": "Ghana Card",
-    "countries": ["gh"],
+    "countries": [
+      "gh"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -620,7 +1013,9 @@
     "type": 1,
     "firstIssuanceYear": 2013,
     "name": "South Africa National ID",
-    "countries": ["za"],
+    "countries": [
+      "za"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -628,7 +1023,9 @@
     "type": 1,
     "firstIssuanceYear": 2021,
     "name": "Connect ID",
-    "countries": ["au"],
+    "countries": [
+      "au"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -636,7 +1033,9 @@
     "type": 1,
     "firstIssuanceYear": 2008,
     "name": "Digidentity",
-    "countries": ["nl"],
+    "countries": [
+      "nl"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -644,7 +1043,9 @@
     "type": 1,
     "firstIssuanceYear": 2011,
     "name": "Indonesia NIK",
-    "countries": ["id"],
+    "countries": [
+      "id"
+    ],
     "typeName": "Centralized eID"
   },
   {
@@ -652,7 +1053,39 @@
     "type": 1,
     "firstIssuanceYear": 2014,
     "name": "Yoti",
-    "countries": ["gb"],
+    "countries": [
+      "gb"
+    ],
+    "typeName": "Centralized eID"
+  },
+  {
+    "id": "us-id-pass",
+    "type": 3,
+    "firstIssuanceYear": 2025,
+    "name": "US Digital Passport",
+    "countries": [
+      "us"
+    ],
+    "typeName": "Identity Wallet"
+  },
+  {
+    "id": "us-mdl",
+    "type": 3,
+    "firstIssuanceYear": 2022,
+    "name": "US Mobile Driver License",
+    "countries": [
+      "us"
+    ],
+    "typeName": "Identity Wallet"
+  },
+  {
+    "id": "edoapp",
+    "type": 1,
+    "firstIssuanceYear": 2021,
+    "name": "eDO App",
+    "countries": [
+      "pl"
+    ],
     "typeName": "Centralized eID"
   }
 ]
