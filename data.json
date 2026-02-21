@@ -138,7 +138,7 @@
         ],
         "defaultLoa": 4,
         "type": 3,
-        "supportedIdWallets": []
+        "supportedIdWallets": ["eudi-wallet"]
     },
     {
         "id": "bankidse",

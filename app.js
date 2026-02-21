@@ -24,7 +24,7 @@ function getReleaseDateOrderValue(value) {
   if (quarterMatch) {
     const quarter = Number(quarterMatch[1]);
     const year = Number(quarterMatch[2]);
-    const month = (quarter - 1) * 3 + 1;
+    const month = (quarter - 1) * 3 + 2;
     return year * 100 + month;
   }
 
@@ -64,6 +64,30 @@ function getTypeIconPath(t) {
     '3': 'icons/type-3-wallet-closed.svg'
   };
   return map[String(t)] || '';
+}
+
+function getWalletIconPath(walletId) {
+  const map = {
+    'google-wallet': 'icons/wallet-google.svg',
+    'apple-wallet': 'icons/wallet-apple.svg',
+    'samsung-wallet': 'icons/wallet-samsung.jpg',
+    'eudi-wallet': 'icons/wallet-eu.svg',
+    'map-wallet': 'icons/wallet-map-pin.svg',
+    'map-point-wallet': 'icons/wallet-map-pin.svg',
+    'map-pin-wallet': 'icons/wallet-map-pin.svg'
+  };
+  return map[String(walletId || '').toLowerCase()] || 'icons/wallet-map-pin.svg';
+}
+
+function renderSupportedWallets(wallets) {
+  const values = (wallets || []).filter(Boolean);
+  if (!values.length) return '-';
+  return values
+    .map(wallet => {
+      const iconPath = getWalletIconPath(wallet);
+      return `<img src="${iconPath}" class="wallet-icon" alt="${wallet}" title="${wallet}"/>`;
+    })
+    .join(' ');
 }
 
 // (removed updateTypeIcon) icons are rendered inside the dropdown options now
@@ -424,7 +448,7 @@ function initFilters() {
         }
         releaseSelect.value = String(releaseOptions[releaseAnimIndex]);
         releaseSelect.dispatchEvent(new Event('change', { bubbles: true }));
-      }, 500);
+      }, 1000);
     }
 
     if (releasePlayBtn) {
@@ -625,15 +649,19 @@ function selectCountry(countryCode, countryName, countryRegion) {
   }
 
   items.forEach(item => {
+    const typeIconPath = getTypeIconPath(item.type);
+    const typeDisplay = `${typeIconPath ? `<img src="${typeIconPath}" class="details-type-icon" alt="type-${item.type}"/> ` : ''}${item.type ?? '-'}`;
+
     panel.innerHTML += `
       <div style="margin-bottom:24px; border-bottom:1px solid #4caf50;">
         <img src=${item.logoUrl} alt="${item.name} logo" height="24" style="vertical-align:middle; margin-right:8px; margin-bottom:6px"/>
         <strong>${item.name}</strong><br/>
         <small>
-          <strong>Type:</strong> ${item.type}<br/>
+          <strong>Type:</strong> ${typeDisplay}<br/>
           <strong>LoA:</strong> ${item.loa?.join(", ") || "-"}<br/>
           <strong>Year of first issuance:</strong> ${yearMap[item.id] ?? '-'}<br/>
           <strong><i>h.</i> Release date:</strong> ${releaseDateMap[item.id] ?? '-'}<br/>
+          <strong>Supported wallets:</strong> ${renderSupportedWallets(item.supportedIdWallets)}<br/>
           <strong>Flows:</strong> ${item.flowTypes?.join(", ") || "-"}<br/>
           <strong>Scopes:</strong> <ul style="margin-block-start:0.25em"><li>${item.scopes?.join("</li><li>") || "-"}</li></ul>
         </small>

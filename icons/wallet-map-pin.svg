@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Map Wallet">
+  <circle cx="12" cy="9" r="7" fill="#4caf50"/>
+  <path d="M12 23c-.17 0-.34-.07-.46-.2C10.9 22.13 5 15.7 5 11a7 7 0 1 1 14 0c0 4.7-5.9 11.13-6.54 11.8-.12.13-.29.2-.46.2z" fill="#4caf50"/>
+  <circle cx="12" cy="9" r="2.6" fill="#fff"/>
+</svg>
