@@ -12,7 +12,7 @@
   {
     "id": "eudi-pid",
     "type": 3,
-    "firstIssuanceYear": 2026,
+    "firstIssuanceYear": 2025,
     "name": "EUDI PID",
     "countries": [
       "at",

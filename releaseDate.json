@@ -1,0 +1,695 @@
+[
+  {
+    "id": "kmdl",
+    "releaseDate": "October 2025",
+    "type": 3,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "us-id-pass",
+    "releaseDate": "January 2026",
+    "type": 3,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "us-mdl",
+    "releaseDate": "January 2026",
+    "type": 3,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "eudi-pid",
+    "releaseDate": "June 2025",
+    "type": 3,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "bankidse",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "frejaid",
+    "releaseDate": "July 2025",
+    "type": 1,
+    "loa": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "audkenni",
+    "releaseDate": "July 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "smartid",
+    "releaseDate": "October 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "evrotrust",
+    "releaseDate": "September 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "singpass",
+    "releaseDate": "October 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "mitid",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "id": "idin",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "ftn",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "no-bankid",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "id": "buypass",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "verimi",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "be-cardreader",
+    "releaseDate": "December 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "skmobileid",
+    "releaseDate": "June 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "ausweisapp",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "linlp",
+    "releaseDate": "October 2025",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "cmd",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "diia",
+    "releaseDate": "October 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "passport",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "at-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "be-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "fr-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "de-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "it-idcard",
+    "releaseDate": "Q1 2026",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "lu-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "mt-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "pt-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "ro-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "se-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "bg-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "hr-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "cy-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "cz-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "ee-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "fi-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "gr-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "hu-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "ie-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "lv-idcard",
+    "releaseDate": "Q1 2026",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "lt-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "nl-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "pl-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "sk-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "si-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "es-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "is-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "li-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "no-idcard",
+    "releaseDate": "June 2025",
+    "type": 2,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "aadhaar",
+    "releaseDate": "Q1 2026",
+    "type": 1,
+    "loa": [
+      2
+    ]
+  },
+  {
+    "id": "edoapp",
+    "releaseDate": "Q1 2026",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "uaepass",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      4,
+      2
+    ]
+  },
+  {
+    "id": "oneid",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      4,
+      3
+    ]
+  },
+  {
+    "id": "mojeidcz",
+    "releaseDate": "October 2025",
+    "type": 1,
+    "loa": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "id-austria",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      4
+    ]
+  },
+  {
+    "id": "bankid-cz",
+    "releaseDate": "February 2026",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "ng-nin",
+    "releaseDate": "October 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "spid-ig",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "id": "ug-nin",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "kenya-nid",
+    "releaseDate": "October 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "kenya-pass",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "ng-bvn",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "zw-nin",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "angola-nin",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "ghana-pass",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "ghana-vid",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "mx-curp",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "br-cpf",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "peru-dni",
+    "releaseDate": "Q1 2026",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "vipps-cr",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "ng-vid",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "kenya-alien",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "ci-nid",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "ci-rid",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "ng-vnin",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "za-refugee",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "ghana-card",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "za-nid",
+    "releaseDate": "November 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "connectid",
+    "releaseDate": "Q2 2026",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  },
+  {
+    "id": "digidentity",
+    "releaseDate": "February 2026",
+    "type": 1,
+    "loa": [
+      3,
+      4
+    ]
+  },
+  {
+    "id": "id-nik",
+    "releaseDate": "December 2025",
+    "type": 1,
+    "loa": [
+      1
+    ]
+  },
+  {
+    "id": "yoti",
+    "releaseDate": "June 2025",
+    "type": 1,
+    "loa": [
+      3
+    ]
+  }
+]

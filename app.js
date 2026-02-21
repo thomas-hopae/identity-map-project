@@ -9,10 +9,50 @@ let viewMode = 'map';
 let countryMeta = {};
 let selectedCountryCode = null;
 let yearMap = {};
+let releaseDateMap = {};
 let yearTimer = null;
 let isYearPlaying = false;
 let yearAnimIndex = 0;
+let releaseTimer = null;
+let isReleasePlaying = false;
+let releaseAnimIndex = 0;
 
+function getReleaseDateOrderValue(value) {
+  if (!value) return null;
+  const text = String(value).trim();
+  const quarterMatch = text.match(/^Q([1-4])\s+(\d{4})$/i);
+  if (quarterMatch) {
+    const quarter = Number(quarterMatch[1]);
+    const year = Number(quarterMatch[2]);
+    const month = (quarter - 1) * 3 + 1;
+    return year * 100 + month;
+  }
+
+  const monthMap = {
+    january: 1,
+    february: 2,
+    march: 3,
+    april: 4,
+    may: 5,
+    june: 6,
+    july: 7,
+    august: 8,
+    september: 9,
+    october: 10,
+    november: 11,
+    december: 12
+  };
+
+  const monthMatch = text.match(/^([A-Za-z]+)\s+(\d{4})$/);
+  if (monthMatch) {
+    const monthName = monthMatch[1].toLowerCase();
+    const year = Number(monthMatch[2]);
+    const month = monthMap[monthName];
+    if (month) return year * 100 + month;
+  }
+
+  return null;
+}
 // ----------------------------
 // Type icon helpers (global)
 // ----------------------------
@@ -46,9 +86,25 @@ fetch("data.json")
       .then(years => {
         yearMap = {};
         (years || []).forEach(y => { if (y && y.id) yearMap[y.id] = y.firstIssuanceYear; });
-        filteredData = [...data];
-        initMap();
-        initFilters();
+        // load release date data
+        fetch('releaseDate.json')
+          .then(rr => { if (!rr.ok) throw new Error('Failed to load releaseDate.json'); return rr.json(); })
+          .then(releases => {
+            releaseDateMap = {};
+            (releases || []).forEach(r => {
+              if (r && r.id) releaseDateMap[r.id] = r.releaseDate ?? null;
+            });
+            filteredData = [...data];
+            initMap();
+            initFilters();
+          })
+          .catch(releaseErr => {
+            console.warn('Could not load releaseDate.json:', releaseErr);
+            releaseDateMap = {};
+            filteredData = [...data];
+            initMap();
+            initFilters();
+          });
       })
       .catch(err => {
         console.warn('Could not load yearOfFirstIssuance.json:', err);
@@ -308,6 +364,79 @@ function initFilters() {
       yearSelect.addEventListener('change', () => { if (isYearPlaying && document.activeElement !== playBtn) stopYearAnimation(); });
     }
   }
+
+  // populate release date filter (single select)
+  const releaseSelect = document.getElementById('releaseFilter');
+  if (releaseSelect) {
+    const releaseOrderByLabel = new Map();
+    Object.values(releaseDateMap || {}).forEach(value => {
+      if (!value) return;
+      const label = String(value).trim();
+      const order = getReleaseDateOrderValue(label);
+      if (order === null) return;
+      if (!releaseOrderByLabel.has(label) || order < releaseOrderByLabel.get(label)) {
+        releaseOrderByLabel.set(label, order);
+      }
+    });
+
+    const releaseOptions = Array.from(releaseOrderByLabel.entries())
+      .sort((a, b) => (a[1] - b[1]) || a[0].localeCompare(b[0]))
+      .map(([label]) => label);
+
+    releaseSelect.innerHTML = '<option value="">Any</option>';
+    releaseOptions.forEach(label => {
+      const option = document.createElement('option');
+      option.value = label;
+      option.text = label;
+      releaseSelect.appendChild(option);
+    });
+
+    releaseSelect.addEventListener('change', () => { applyFilters(); try { updateActiveFilters(); } catch(e){} });
+
+    const releasePlayBtn = document.getElementById('releasePlayButton');
+    function stopReleaseAnimation() {
+      if (releaseTimer) { clearInterval(releaseTimer); releaseTimer = null; }
+      isReleasePlaying = false;
+      releaseAnimIndex = 0;
+      if (releasePlayBtn) {
+        releasePlayBtn.setAttribute('aria-pressed', 'false');
+        releasePlayBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 5v14l11-7L8 5z" fill="currentColor"/></svg>`;
+      }
+    }
+
+    function startReleaseAnimation() {
+      if (!releaseOptions.length) return;
+      stopReleaseAnimation();
+      isReleasePlaying = true;
+      if (releasePlayBtn) {
+        releasePlayBtn.setAttribute('aria-pressed', 'true');
+        releasePlayBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 6h4v12H6zM14 6h4v12h-4z" fill="currentColor"/></svg>`;
+      }
+      releaseAnimIndex = 0;
+      releaseSelect.value = String(releaseOptions[releaseAnimIndex]);
+      releaseSelect.dispatchEvent(new Event('change', { bubbles: true }));
+
+      releaseTimer = setInterval(() => {
+        releaseAnimIndex++;
+        if (releaseAnimIndex >= releaseOptions.length) {
+          stopReleaseAnimation();
+          return;
+        }
+        releaseSelect.value = String(releaseOptions[releaseAnimIndex]);
+        releaseSelect.dispatchEvent(new Event('change', { bubbles: true }));
+      }, 500);
+    }
+
+    if (releasePlayBtn) {
+      releasePlayBtn.setAttribute('aria-pressed', 'false');
+      releasePlayBtn.addEventListener('click', () => {
+        if (isReleasePlaying) stopReleaseAnimation(); else startReleaseAnimation();
+      });
+      releaseSelect.addEventListener('change', () => {
+        if (isReleasePlaying && document.activeElement !== releasePlayBtn) stopReleaseAnimation();
+      });
+    }
+  }
   document.getElementById("typeFilter").addEventListener("change", applyFilters);
   document.getElementById("loaFilter").addEventListener("change", applyFilters);
   document.getElementById("regionFilter").addEventListener("change", applyFilters);
@@ -346,7 +475,8 @@ function updateActiveFilters() {
   const filters = [
     { id: 'typeFilter' },
     { id: 'loaFilter' },
-    { id: 'regionFilter' }
+    { id: 'regionFilter' },
+    { id: 'releaseFilter' }
   ];
 
   let filterCount = 0;
@@ -375,6 +505,9 @@ function applyFilters() {
   const regionValues = Array.from(document.getElementById("regionFilter").selectedOptions).map(o => o.value).filter(Boolean);
   const yearEl = document.getElementById("yearFilter");
   const yearValue = yearEl && yearEl.value ? Number(yearEl.value) : null;
+  const releaseEl = document.getElementById("releaseFilter");
+  const releaseValue = releaseEl && releaseEl.value ? releaseEl.value : null;
+  const releaseOrderValue = releaseValue ? getReleaseDateOrderValue(releaseValue) : null;
 
   filteredData = data.filter(item => {
 
@@ -383,6 +516,18 @@ function applyFilters() {
       if (!itemLoas.some(l => loaValues.includes(l))) return false;
     }
 
+    if (releaseOrderValue !== null) {
+      const itemReleaseRaw = releaseDateMap[item.id];
+
+      if (isReleasePlaying) {
+        const itemReleaseOrder = getReleaseDateOrderValue(itemReleaseRaw);
+        // play mode keeps cumulative behavior (all previous dates included)
+        if (itemReleaseOrder === null || itemReleaseOrder > releaseOrderValue) return false;
+      } else {
+        // manual selection uses exact date matching only
+        if (!itemReleaseRaw || String(itemReleaseRaw).trim() !== String(releaseValue).trim()) return false;
+      }
+    }
     if (typeValues.length) {
       if (!typeValues.includes(item.type)) return false;
     }
@@ -488,6 +633,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
           <strong>Type:</strong> ${item.type}<br/>
           <strong>LoA:</strong> ${item.loa?.join(", ") || "-"}<br/>
           <strong>Year of first issuance:</strong> ${yearMap[item.id] ?? '-'}<br/>
+          <strong><i>h.</i> Release date:</strong> ${releaseDateMap[item.id] ?? '-'}<br/>
           <strong>Flows:</strong> ${item.flowTypes?.join(", ") || "-"}<br/>
           <strong>Scopes:</strong> <ul style="margin-block-start:0.25em"><li>${item.scopes?.join("</li><li>") || "-"}</li></ul>
         </small>
