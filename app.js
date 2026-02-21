@@ -651,6 +651,9 @@ function selectCountry(countryCode, countryName, countryRegion) {
   items.forEach(item => {
     const typeIconPath = getTypeIconPath(item.type);
     const typeDisplay = `${typeIconPath ? `<img src="${typeIconPath}" class="details-type-icon" alt="type-${item.type}"/> ` : ''}${item.type ?? '-'}`;
+    const supportedWalletLine = Number(item.type) === 3
+      ? `<strong>Supported wallet:</strong> ${renderSupportedWallets(item.supportedIdWallets)}<br/>`
+      : '';
 
     panel.innerHTML += `
       <div style="margin-bottom:24px; border-bottom:1px solid #4caf50;">
@@ -661,7 +664,7 @@ function selectCountry(countryCode, countryName, countryRegion) {
           <strong>LoA:</strong> ${item.loa?.join(", ") || "-"}<br/>
           <strong>Year of first issuance:</strong> ${yearMap[item.id] ?? '-'}<br/>
           <strong><i>h.</i> Release date:</strong> ${releaseDateMap[item.id] ?? '-'}<br/>
-          <strong>Supported wallets:</strong> ${renderSupportedWallets(item.supportedIdWallets)}<br/>
+          ${supportedWalletLine}
           <strong>Flows:</strong> ${item.flowTypes?.join(", ") || "-"}<br/>
           <strong>Scopes:</strong> <ul style="margin-block-start:0.25em"><li>${item.scopes?.join("</li><li>") || "-"}</li></ul>
         </small>
